@@ -21,11 +21,25 @@
 <nav class="top-bar" data-topbar role="navigation">
 
   <ul class="title-area">
-      <li class="name"><h1><a href="/photo/album/">Фотогаллерея</a></h1></li>
+      <li class="name"><h1><a href="/photo/album/">{{ app_name }}</a></h1></li>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li>
   </ul>
 
    <section class="top-bar-section">
+        {% if albums %}
+        <ul class="left">
+            <li class="has-dropdown">
+                <a href="#">Фотоальбомы</a>
+                <ul class="dropdown">
+                {% for a in albums %}
+                    {% if a.id == album.id %}<li class="active">{% else %}<li>{% endif %}<a href="/photo/album/{{ a.id }}/">{{ a.title }}</a></li>
+
+                {% endfor %}
+                </ul>
+            </li>
+        </ul>
+        {% endif %}
+
        <ul class="right">
            {% if user.username %}
                {% if user.is_superuser %}
@@ -37,6 +51,8 @@
            {% endif %}
        </ul>
    </section>
+
+
 </nav>
 </div></div>
 

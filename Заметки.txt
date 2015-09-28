@@ -57,3 +57,8 @@ http://zencoder.ru/css/css-grid-zurb-foundation-5/
 
 -- Играемся с PIL
 http://habrahabr.ru/post/163663/
+
+-- Инструмент для Деплоя - Fabric
+http://www.fabfile.org/
+http://habrahabr.ru/post/141271/
+http://habrahabr.ru/post/165081/

@@ -14,7 +14,11 @@ class breadcumb:
         self.cl=cl
 
 def photogal_processor(request):
-    return {'app_name' : 'PhotoGallery', 'app_ver' : '0.01'}
+    args={}
+    args['app_name']=settings.PHOTOGAL_APP_NAME
+    args['app_ver']='0.01'
+    args['albums']=PhotoAlbums.objects.all()
+    return args
 
 # Create your views here.
 def hello(request):

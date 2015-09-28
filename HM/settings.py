@@ -39,7 +39,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'easy_thumbnails',
     'photogal',
     'hm_auth',
 )
@@ -119,6 +118,7 @@ STATICFILES_DIRS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
+PHOTOGAL_APP_NAME = 'Home Media Catalog (HMC)'
 PHOTOGAL_THUMBS_DIR = 'thumbs'
 PHOTOGAL_THUMBS_SIZE = 200
 PHOTOGAL_THUMBS_SQUARE = True
