@@ -1,0 +1,103 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/foundation.css" %}">
+    <style type="text/css">
+        body { background: #e9e9e9 url( {% static "gal/hoffman.png" %} );}
+        .row { background: #fff; }
+        footer{overflow: hidden; background: #444; padding-top: 0px; color: #bbb;}
+        footer p{font-size: 12px;}
+    </style>
+</head>
+
+<body>
+<!-- Строка навигации -->
+<div class="row"><div class="contain-to-grid sticky">
+<nav class="top-bar" data-topbar role="navigation">
+
+  <ul class="title-area">
+      <li class="name"><h1><a href="/photo/album/">Фотогаллерея</a></h1></li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li>
+  </ul>
+
+   <section class="top-bar-section">
+       <ul class="right">
+           {% if user.username %}
+               {% if user.is_superuser %}
+               <li><a href="/auth/settings/">Настройка </a></li>
+               {% endif %}
+               <li><a href="/accounts/logout/">Выйти ({{ user.username }})</a></li>
+           {% else %}
+               <li><a href="/accounts/login/">Войти</a></li>
+           {% endif %}
+       </ul>
+   </section>
+</nav>
+</div></div>
+
+<!-- Breadcumb -->
+{% if breadcumbs %}
+<div class="row"><div class="contain-to-grid">
+    <nav class="breadcrumbs">
+        {% for f in breadcumbs %}
+            <a href="{{ f.href }}" class="{{ f.cl }}">{{ f.title }}</a>
+        {% endfor %}
+    </nav>
+</div></div>
+{% endif %}
+
+<!-- Сообщения пользователя -->
+<div class="row"><div class="large-12 columns">
+{% if alert_message %}
+<div data-alert class="alert-box {{ alert_type }} radius">
+{% block alert_top %}{% endblock %}
+  <a href="#" class="close">&times;</a>
+</div>
+{% endif %}
+</div></div>
+
+<!-- Контент -->
+<div class="row"><div class="large-12 columns">
+    <p></p>
+    {% if user.username %}
+        {% block content %}{% endblock %}
+    {% else %}
+        {% block login %}{% endblock %}
+    {% endif %}
+    <p></p>
+</div></div>
+
+<!-- Футер -->
+<div class="row">
+    <footer>
+    <div class="large-12 columns">
+
+    {% block footer %}
+     <p>
+        &copy; 2015 Все права защищены {{ app_name }}. Version {{ app_ver }}.
+     </p>
+    {% endblock %}
+
+    </div>
+    </footer>
+</div>
+
+  <script src="{% static "js/vendor/jquery.js" %}"></script>
+  <script src="{% static "js/vendor/modernizr.js" %}"></script>
+  <script src="{% static "js/foundation.min.js" %}"></script>
+
+  <!--<script src="{% static "js/foundation/foundation.reveal.js" %}"></script>
+  <script src="{% static "js/foundation/foundation.clearing.js" %}"></script>-->
+  <!-- Other JS plugins can be included here -->
+  <script>
+    $(document).foundation();
+  </script>
+
+ {% block block-js %}{% endblock %}
+</body>
+</html>

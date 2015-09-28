@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block login %}
+    <div id="loginModal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <p></p>
+    <h2 id="modalTitle">Вход в систему.</h2>
+        {%  if form.errors %}
+            <div style="background-color: lightpink">
+            <p style="text-align: center"> Неверное имя или пароль </p>
+            </div>
+        {% endif %}
+        <p>Пожалуйста, выполните вход в систему для прохождения анкетирования.</p>
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="username">Ваш логин:</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+            <input class="button" type="submit" value="Войти">
+            <input type="hidden" name="next" value="" />
+        </form>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+{% endblock %}
+
+{% block block-js %}
+    <script>
+        $('#loginModal').foundation('reveal', 'open');
+    </script>
+{% endblock %}

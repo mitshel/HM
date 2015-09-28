@@ -1,0 +1,59 @@
+C:\Users\mitshel\Dropbox\Projects\HM>manage.py createsuperuser
+Username (leave blank to use 'mitshel'):
+Email address: mitshel@mail.ru
+Password:
+Password (again):
+Superuser created successfully.
+
+-- Для работы галлереи нужен pillow:
+    pip install  pillow
+
+-- Для создания миниатюр возможно лучше воспользоваться библиотекой
+    http://easy-thumbnails.readthedocs.org/en/2.1/usage/      ( или http://thumbnail.sorl.net/ - не пробовал )
+    Устанавливаем командой:
+        pip install easy-thumbnails
+    после чего добавить в settings.py:
+        INSTALLED_APPS = (
+            ...
+            'easy_thumbnails',
+        )
+    и затем выполнить следующую команду миграции:
+        manage.py migrate easy_thumbnails
+
+
+http://djbook.ru/ch12.html - Сессии, пользователи и регистрация
+http://djbook.ru/ch12s04.html - О пользователях, группах, сообщениях и профилях.
+http://djbook.ru/rel1.8/ref/settings.html#std:setting-SESSION_COOKIE_AGE - о настройках проекта
+http://djbook.ru/examples/33/ - о работе с медиа (MEDIA,STATIC)
+
+
+-- Асинхронное выполенние задач
+http://habrahabr.ru/post/123902/ - о Django-Celery
+http://larin.in/archives/100
+
+-- Создание собственных команд
+http://djbook.ru/rel1.8/howto/custom-management-commands.html
+
+
+
+-- Команды для сканирования/удаления альбмомов
+manage.py list
+manage.py scan <album_tag_name>
+manage.py clear <album_tag_name>
+
+
+-- Интересные плагины для Django
+http://cultofdigits.com/articles/django-cms/5-ispolzovanie-plaginov/
+
+
+-- Хорошие книги - можно купить
+http://www.bhv.ru/books/book.php?id=193488
+
+-- Инфомация по значениям EXIF Orientation
+http://www.impulseadventure.com/photo/exif-orientation.html
+
+-- Неплохое описанеи ZURB Foundation на русском
+http://zencoder.ru/css/css-grid-zurb-foundation-5/
+
+-- Играемся с PIL
+http://habrahabr.ru/post/163663/

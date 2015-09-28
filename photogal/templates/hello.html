@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block title %}Фотогаллерея PhotoGal{% endblock %}
+{% block content %}
+    <div class="large-12 columns">
+    <p class="text-justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Здравствуйте <b>{{ user.username }}</b>!
+        Здесь будет расположена фотогаллерея.
+    </p>
+    </div>
+
+{% endblock %}
