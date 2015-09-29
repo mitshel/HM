@@ -97,7 +97,11 @@ def addimage(title,filename,path,album):
     prev_path=os.path.join(miniatures_path, addthumb(filename,PHOTOGAL_PREV_STR))
     if not os.path.exists(thumb_path):
         full_path=os.path.join(album.base_path, path, filename)
-        photo=Image.open(full_path)
+        try:
+            photo=Image.open(full_path)
+        except OSError:
+            errorflag=1
+            return None
 
         # Получаем информацию об ориентации фотографии из Exif
         exif_orientation = 0
@@ -105,7 +109,7 @@ def addimage(title,filename,path,album):
             exif = photo._getexif()
         except:
             exif = None
-            errorflag=1
+            errorflag=2
 
         if exif != None:
             for tag, value in exif.items():
@@ -121,7 +125,7 @@ def addimage(title,filename,path,album):
             if exif_orientation == 6: photo=photo.rotate(270)
             if exif_orientation == 8: photo=photo.rotate(90)
         except:
-            errorflag=2
+            errorflag=3
 
         thumb=photo
         prev=photo
@@ -141,21 +145,24 @@ def addimage(title,filename,path,album):
                 upper = int(delta/2)
                 right = width
                 lower = width + upper
+        try:
             thumb = thumb.crop((left, upper, right, lower))
+        except:
+            errorflag=4
 
         # Создаем миниатюру и preview
         try:
             thumb.thumbnail((PHOTOGAL_THUMBS_SIZE, PHOTOGAL_THUMBS_SIZE), Image.ANTIALIAS)
             prev.thumbnail((PHOTOGAL_PREVIEW_SIZE, PHOTOGAL_PREVIEW_SIZE), Image.ANTIALIAS)
         except:
-            errorflag=3
+            errorflag=5
 
 
         try:
             thumb.save(thumb_path,'JPEG')
             prev.save(prev_path,'JPEG')
         except:
-            errorflag=4
+            errorflag=6
 
         img.rotateinfo=exif_orientation
         img.errorflag=errorflag
