@@ -5,6 +5,7 @@ from django.shortcuts import render_to_response, redirect
 from django.core.context_processors import csrf
 from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, addthumb
 from django.conf import settings
+from django.db.models import Q
 import os
 
 class breadcumb:
@@ -17,7 +18,9 @@ def photogal_processor(request):
     args={}
     args['app_name']=settings.PHOTOGAL_APP_NAME
     args['app_ver']='0.01'
-    args['albums']=PhotoAlbums.objects.all()
+    user=request.user
+    if user.is_authenticated():
+        args['albums']=PhotoAlbums.objects.filter(Q(allow_group__in=user.groups.values('id'))&~Q(deny_group__in=user.groups.values('id')))
     return args
 
 # Create your views here.
@@ -63,7 +66,7 @@ def show_page(request, album_id=None, cat_id=None):
         breadcumbs.insert(0,breadcumb(f.name, "/photo/album/%s/%s/"%(album.id,f.id),cl))
         cl=None
         f=f.parent
-    breadcumbs.insert(0,breadcumb(album.title,"/photo/album/",cl))
+    breadcumbs.insert(0,breadcumb(album.title,"/photo/album/%s/"%album.id,cl))
 
     folders=[]
     catalogs=PhotoCats.objects.filter(album=album, parent_id=cat_id)

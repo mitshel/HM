@@ -2,6 +2,7 @@
 
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User, Group
 import os
 from PIL import Image
 from PIL.ExifTags import TAGS
@@ -23,6 +24,8 @@ class PhotoAlbums(models.Model):
     title = models.CharField(max_length=64, null=False, blank=False)
     base_path = models.CharField(max_length=256, default=Setting.objects.get(name='base_path').value)
     tag = models.CharField(max_length=16, null=False, blank=False, unique=True)
+    allow_group=models.ForeignKey(Group, null=True, blank=True, related_name='allow_group')
+    deny_group=models.ForeignKey(Group, null=True, blank=True, related_name='deny_group')
 
     def __str__(self):
         return self.title
@@ -30,6 +33,7 @@ class PhotoAlbums(models.Model):
     class Meta:
         verbose_name_plural = 'Photo Albums'
         ordering = ['title']
+        permissions = (("can_view_album","Can view album"),)
 
 class PhotoCats(models.Model):
     parent = models.ForeignKey('self', null=True)
