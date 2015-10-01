@@ -62,3 +62,8 @@ http://habrahabr.ru/post/163663/
 http://www.fabfile.org/
 http://habrahabr.ru/post/141271/
 http://habrahabr.ru/post/165081/
+
+-- Об адаптивных галлереях LightBox
+http://dbmast.ru/15-adaptivnyh-jquery-plaginov-lightbox
+-- Понравился swipebox
+http://brutaldesign.github.io/swipebox/#download

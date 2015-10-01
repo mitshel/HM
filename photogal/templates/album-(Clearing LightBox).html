@@ -17,16 +17,16 @@
         </ul>
     </div>
     <div class="row">
-        <ul class="clearing-thumbs small-block-grid-3 medium-block-grid-4 large-block-grid-6">
+        <ul class="clearing-thumbs small-block-grid-3 medium-block-grid-4 large-block-grid-6" data-clearing>
         {%  for p in photos %}
-                <li class="text-center">
-                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<a href='{{ MEDIA_URL }}{{p.prev_path}}' download>File:{{ p.title }}</a>, ID:{{ p.id }}">
-                <img src="{{ MEDIA_URL }}{{p.thumb_path}}" alt="{{ p.title }}">
+            <li class="text-center">
+                <a class="th round" href="{{ MEDIA_URL }}{{p.prev_path}}">
+                <img data-caption="File:{{ p.title }}, ID:{{ p.id }}" src="{{ MEDIA_URL }}{{p.thumb_path}}">
                 </a>
                 <p style="text-align: center; font-size: small; margin:0;">
                     {{ p.title }}
                 </p>
-                </li>
+            </li>
         {% endfor %}
         </ul>
     </div>
