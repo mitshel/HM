@@ -20,13 +20,13 @@
         <ul class="clearing-thumbs small-block-grid-3 medium-block-grid-4 large-block-grid-6">
         {%  for p in photos %}
                 <li class="text-center" style="padding: 5px;">
-                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<a href='{{ MEDIA_URL }}{{p.prev_path}}' download> File:{{ p.title }}</a>, ID:{{ p.id }} <input type='checkbox' id='{{ p.id }}' onclick='update_select(this);' {% if p.checked %}checked{% endif %}>">
+                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<input type='checkbox' class='favstar' id='{{ p.id }}' onclick='update_select(this);' {% if p.checked %}checked{% endif %}/><label for='{{ p.id }}'><span></span></label><a href='{{ MEDIA_URL }}{{p.prev_path}}' download> File:{{ p.title }}</a>, ID:{{ p.id }}">
                 <img src="{{ MEDIA_URL }}{{p.thumb_path}}" alt="{{ p.title }}">
                 </a>
-                <div class="text-center" style="margin: 0;">
-                    <input type="checkbox" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}>
+                <div style="margin: 0;">
+                    <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><span></span></label>
                 </div>
-                <p class="text-center" style="font-size: small; margin:0; line-height: 1">{{ p.title }}</p>
+                <p style="font-size: smaller; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
         </ul>
     </div>

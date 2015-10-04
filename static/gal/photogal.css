@@ -1,0 +1,22 @@
+input[type="checkbox"].favstar {
+    display:none;
+}
+
+input[type="checkbox"].favstar + label {
+    font-family:Arial, sans-serif;
+    font-size:12px;
+}
+
+input[type="checkbox"].favstar + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:0px 0px 0 0;
+    vertical-align:middle;
+    background:url(star-off.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"].favstar:checked + label span {
+    background:url(star-on.png) left top no-repeat;
+}
