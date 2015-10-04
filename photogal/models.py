@@ -9,6 +9,7 @@ from PIL.ExifTags import TAGS
 from HM.settings import MEDIA_ROOT, PHOTOGAL_THUMBS_DIR, PHOTOGAL_THUMBS_SIZE, PHOTOGAL_THUMBS_SQUARE, PHOTOGAL_PREVIEW_SIZE, PHOTOGAL_THUMB_STR, PHOTOGAL_PREV_STR
 
 PHOTOGAL_THUMBS_ROOT = os.path.join(MEDIA_ROOT, PHOTOGAL_THUMBS_DIR)
+LIST_DIVIDER = ','
 
 # Create your models here.
 class Setting(models.Model):
@@ -65,6 +66,66 @@ class PhotoImages(models.Model):
     class Meta:
         verbose_name_plural = 'Photo Images'
         ordering = ['album', 'path', 'title']
+
+class PhotoCollections(models.Model):
+    uid = models.ForeignKey(User)
+    title = models.CharField(max_length=256, null=False, blank=False)
+    photo_list = models.TextField(null=True, blank=True)
+    favorite = models.BooleanField(null=False, default=False)
+
+    def add_photo(self, s_id=None):
+        if self.photo_list==None or self.photo_list=='':
+            selected=[]
+        else:
+            selected = self.photo_list.split(LIST_DIVIDER)
+        if s_id in selected:
+            return None
+        else:
+            selected.append(s_id)
+            self.photo_list = LIST_DIVIDER.join(selected)
+            self.save()
+            return s_id
+
+    def del_photo(self,s_id):
+        if self.photo_list==None or self.photo_list=='':
+            selected=[]
+        else:
+            selected = self.photo_list.split(LIST_DIVIDER)
+        if s_id in selected:
+            selected.remove(s_id)
+            self.photo_list = LIST_DIVIDER.join(selected)
+            self.save()
+            return s_id
+        else:
+            return None
+
+    def clear(self):
+        selected=[]
+        self.photo_list = LIST_DIVIDER.join(selected)
+        self.save()
+
+    def get_list(self):
+        if self.photo_list==None or self.photo_list=='':
+            selected=[]
+        else:
+            selected = self.photo_list.split(LIST_DIVIDER)
+        return selected
+
+    def is_checked(self,s_id=None):
+        if self.photo_list==None or self.photo_list=='':
+            selected=[]
+        else:
+            selected = self.photo_list.split(LIST_DIVIDER)
+
+        result = s_id in selected
+        return result
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name_plural = 'Photo Collections'
+        ordering = ['title']
 
 def addcat(album, rel_path):
     try:

@@ -38,6 +38,14 @@
                 {% endfor %}
                 </ul>
             </li>
+            <li class="has-dropdown">
+                <a href="#">Коллекции</a>
+                <ul class="dropdown">
+                {% for c in collections %}
+                        {% if c.id == collection.id %}<li class="active">{% else %}<li>{% endif %}<a href="/photo/collect/{{ c.id }}/">{{ c.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </li>
         </ul>
         {% endif %}
 

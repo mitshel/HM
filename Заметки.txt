@@ -74,3 +74,15 @@ http://www.inattack.ru/article/sumburnyie-zametki-pro-python-i-django/603.html#.
 -- Об изменении модели пользователя
 http://www.ruspython.com/blog/izmenenie-modeli-polzovatelya-django/
 http://djbook.ru/examples/47/
+
+-- Изменение внешнего вида ChekcBoxов
+http://xiper.net/collect/html-and-css-tricks/verstka-form/nice-checkbox
+
+-- О отестировании проектов Django
+http://habrahabr.ru/post/122156/
+
+import os
+import django
+os.environ['DJANGO_SETTINGS_MODULE']='HM.settings'
+from django.conf import settings
+django.setup()

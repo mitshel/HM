@@ -7,10 +7,10 @@
     <div class="row">
         <ul class="small-block-grid-3 medium-block-grid-4 large-block-grid-6">
         {% for f in folders %}
-            <li class="text-center">
-                <a href="/photo/album/{{ album_id }}/{{ f.id }}/">
+            <li class="text-center" style="padding: 5px">
+                <a href="/photo/album/{{ album.id }}/{{ f.id }}/">
                 <img src="{% static "gal/psg_folder.png" %}">
-                <p style="text-align: center; font-size: small; margin:0; ">{{ f.title }}</p>
+                <div style="text-align: center; font-size: small; margin:0; line-height: 1">{{ f.title }}</div>
                 </a>
             </li>
         {% endfor %}
@@ -19,14 +19,14 @@
     <div class="row">
         <ul class="clearing-thumbs small-block-grid-3 medium-block-grid-4 large-block-grid-6">
         {%  for p in photos %}
-                <li class="text-center">
-                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<a href='{{ MEDIA_URL }}{{p.prev_path}}' download>File:{{ p.title }}</a>, ID:{{ p.id }}">
+                <li class="text-center" style="padding: 5px;">
+                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<a href='{{ MEDIA_URL }}{{p.prev_path}}' download> File:{{ p.title }}</a>, ID:{{ p.id }} <input type='checkbox' id='{{ p.id }}' onclick='update_select(this);' {% if p.checked %}checked{% endif %}>">
                 <img src="{{ MEDIA_URL }}{{p.thumb_path}}" alt="{{ p.title }}">
                 </a>
-                <p style="text-align: center; font-size: small; margin:0;">
-                    {{ p.title }}
-                </p>
-                </li>
+                <div class="text-center" style="margin: 0;">
+                    <input type="checkbox" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}>
+                </div>
+                <p class="text-center" style="font-size: small; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
         </ul>
     </div>
@@ -34,4 +34,10 @@
 {% endblock %}
 
 {% block block-js %}
+    <script>
+       function update_select(chb) {
+           $.getJSON("/photo/updateselect/" + chb.id + "/" + (chb.checked ? 1 : 0) +"/")
+           $("input[id="+chb.id+"]").prop("checked", chb.checked);
+       }
+    </script>
 {% endblock %}
