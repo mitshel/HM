@@ -5,6 +5,9 @@ input[type="checkbox"].favstar {
 input[type="checkbox"].favstar + label {
     font-family:Arial, sans-serif;
     font-size:12px;
+    width:24px;
+    height:24px;
+    margin:0px 0px 0 0;
 }
 
 input[type="checkbox"].favstar + label span {

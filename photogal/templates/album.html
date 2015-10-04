@@ -25,6 +25,7 @@
                 </a>
                 <div style="margin: 0;">
                     <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><span></span></label>
+                    <a href="{{ MEDIA_URL }}{{p.prev_path}}" download><img src="{% static "gal/dwnld.png" %}" width=22 height=22></a>
                 </div>
                 <p style="font-size: smaller; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}

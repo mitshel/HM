@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/views.py" afterPath="$PROJECT_DIR$/photogal/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/gal/dwnld.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/gal/Thumbs.db" afterPath="$PROJECT_DIR$/static/gal/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/album.html" afterPath="$PROJECT_DIR$/photogal/templates/album.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/gal/photogal.css" afterPath="$PROJECT_DIR$/static/gal/photogal.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -48,10 +52,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7538226">
+            <state vertical-scroll-proportion="0.0">
               <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
               <folding>
                 <element signature="e#25#76#0" expanded="true" />
@@ -108,23 +112,23 @@
       <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.673077">
-              <caret line="22" column="293" selection-start-line="22" selection-start-column="293" selection-end-line="22" selection-end-column="293" />
+            <state vertical-scroll-proportion="-6.8653846">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding>
                 <element signature="e#491#561#0#HTML" expanded="true" />
                 <element signature="e#855#876#0#HTML" expanded="true" />
                 <element signature="e#1350#1368#0#HTML" expanded="true" />
-                <element signature="e#1602#1654#0#HTML" expanded="true" />
+                <element signature="e#1736#1788#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photogal.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="photogal.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/gal/photogal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3119266">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -205,9 +209,9 @@
         <option value="$PROJECT_DIR$/photogal/models.py" />
         <option value="$PROJECT_DIR$/static/photogal.css" />
         <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/static/gal/photogal.css" />
-        <option value="$PROJECT_DIR$/photogal/templates/album.html" />
         <option value="$PROJECT_DIR$/photogal/views.py" />
+        <option value="$PROJECT_DIR$/photogal/templates/album.html" />
+        <option value="$PROJECT_DIR$/static/gal/photogal.css" />
       </list>
     </option>
   </component>
@@ -727,7 +731,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443974403847</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix erors with multiuser work. AAdd user in filter for Get PhotoCollections">
+      <created>1443974893883</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1443974893883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -785,7 +795,8 @@
     <MESSAGE value="Extends UserProfile in hm_auth.models.UserProfile class. Added select_list field" />
     <MESSAGE value="Create simple collection mechanizm (favorites only)" />
     <MESSAGE value="Stylize checkbox for favorites input (.favstar class)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stylize checkbox for favorites input (.favstar class)" />
+    <MESSAGE value="Fix erors with multiuser work. AAdd user in filter for Get PhotoCollections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix erors with multiuser work. AAdd user in filter for Get PhotoCollections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1160,32 +1171,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/gal/photogal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.673077">
-          <caret line="22" column="293" selection-start-line="22" selection-start-column="293" selection-end-line="22" selection-end-column="293" />
-          <folding>
-            <element signature="e#491#561#0#HTML" expanded="true" />
-            <element signature="e#855#876#0#HTML" expanded="true" />
-            <element signature="e#1350#1368#0#HTML" expanded="true" />
-            <element signature="e#1602#1654#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,11 +1194,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photogal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7538226">
+        <state vertical-scroll-proportion="0.0">
           <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
           <folding>
             <element signature="e#25#76#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8653846">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding>
+            <element signature="e#491#561#0#HTML" expanded="true" />
+            <element signature="e#855#876#0#HTML" expanded="true" />
+            <element signature="e#1350#1368#0#HTML" expanded="true" />
+            <element signature="e#1736#1788#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/gal/photogal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3119266">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
