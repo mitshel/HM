@@ -76,7 +76,7 @@ def show_album(request, album_id=None, cat_id=None):
     photos=[]
     images=PhotoImages.objects.filter(album=album, cat=cat_id)
     try:
-        favorites = PhotoCollections.objects.get(favorite=True).get_list()
+        favorites = PhotoCollections.objects.get(uid=user, favorite=True).get_list()
     except PhotoCollections.DoesNotExist:
         favorites = []
 
