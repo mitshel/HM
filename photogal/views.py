@@ -12,6 +12,16 @@ from io import StringIO, BytesIO
 from zipfile import ZipFile
 from django.http import HttpResponse
 
+def translit(s):
+   """Russian translit: converts 'привет'->'privet'"""
+   assert s is not str, "Error: argument MUST be string"
+
+   table1 = str.maketrans("абвгдеёзийклмнопрстуфхъыьэАБВГДЕЁЗИЙКЛМНОПРСТУФХЪЫЬЭ",  "abvgdeezijklmnoprstufh'y'eABVGDEEZIJKLMNOPRSTUFH'Y'E")
+   table2 = {'ж':'zh','ц':'ts','ч':'ch','ш':'sh','щ':'sch','ю':'ju','я':'ja',  'Ж':'Zh','Ц':'Ts','Ч':'Ch','Ш':'Sh','Щ':'Sch','Ю':'Ju','Я':'Ja', '«':'\'', '»':'\'','"':'\'','\n':' '}
+   for k in table2.keys():
+       s = s.replace(k,table2[k])
+   return s.translate(table1)
+
 class breadcumb:
     def __init__(self, title='',href='#' ,cl=None):
         self.href=href
@@ -175,7 +185,7 @@ def download_collection(request, collection_id=None):
 
     response = HttpResponse()
     response["Content-Type"]="application/zip"
-    response["Content-Disposition"] = "attachment; filename=files.zip"
+    response["Content-Disposition"] = "attachment; filename=hmc_%s.zip"%translit(collection.title)
 
     in_memory.seek(0)
     response.write(in_memory.read())
