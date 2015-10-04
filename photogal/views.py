@@ -56,10 +56,11 @@ def hello(request):
     return render_to_response('hello.html', args)
 
 
-
 def show_album(request, album_id=None, cat_id=None):
     args = RequestContext(request)
     user=request.user
+    if not user.is_authenticated():
+        return Http404
 
     if album_id==None:
         album=PhotoAlbums.objects.first()
@@ -112,6 +113,8 @@ def show_album(request, album_id=None, cat_id=None):
 def show_collection(request, collection_id=None):
     args = RequestContext(request)
     user = request.user
+    if not user.is_authenticated():
+        return Http404
 
     if collection_id==None:
         collection = PhotoCollections.objects.get(favorite=True)
@@ -140,6 +143,9 @@ def show_collection(request, collection_id=None):
 
 def updateselect(request, id=None, value=0):
     user=request.user
+    if not user.is_authenticated():
+        return Http404
+
     result=None
     if isinstance(id,int): id=str(id)
     if isinstance(value,str): value=int(value)
@@ -163,6 +169,9 @@ def updateselect(request, id=None, value=0):
 
 def download_collection(request, collection_id=None):
 
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
     if collection_id==None:
         return Http404
 
@@ -185,9 +194,15 @@ def download_collection(request, collection_id=None):
 
     response = HttpResponse()
     response["Content-Type"]="application/zip"
-    response["Content-Disposition"] = "attachment; filename=hmc_%s.zip"%translit(collection.title)
+    response["Content-Disposition"] = "attachment; filename=hmc_%s_%s.zip"%(user.username,translit(collection.title))
 
     in_memory.seek(0)
     response.write(in_memory.read())
 
     return response
+
+def copy_collection(request, collection_id=None):
+    return show_collection(request, collection_id)
+
+def clear_collection(request, collection_id=None):
+    return show_collection(request, collection_id)

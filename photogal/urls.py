@@ -6,6 +6,8 @@ urlpatterns = patterns('',
                        url(r'^album/$', 'photogal.views.hello'),
                        url(r'^collect/(\d+)/$', 'photogal.views.show_collection'),
                        url(r'^collect/dl/(\d+)/$', 'photogal.views.download_collection'),
+                       url(r'^collect/copy/(\d+)/$', 'photogal.views.copy_collection'),
+                       url(r'^collect/clear/(\d+)/$', 'photogal.views.clear_collection'),
                        url(r'^updateselect/(\d+)/(\d+)/$', 'photogal.views.updateselect'),
                        url(r'^', 'photogal.views.hello'),
                        )
