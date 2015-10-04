@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 
 from django.template import Context, RequestContext
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render_to_response, redirect, Http404
 from django.core.context_processors import csrf
-from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, PhotoCollections, addthumb
+from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, PhotoCollections, addthumb, PHOTOGAL_THUMBS_ROOT
 from django.conf import settings
 from django.db.models import Q
 from django.http import HttpResponse
 import os
+from io import StringIO, BytesIO
+from zipfile import ZipFile
+from django.http import HttpResponse
 
 class breadcumb:
     def __init__(self, title='',href='#' ,cl=None):
@@ -127,8 +130,6 @@ def show_collection(request, collection_id=None):
 
 def updateselect(request, id=None, value=0):
     user=request.user
-    response = HttpResponse()
-    response['Content-Type']="text/javascript"
     result=None
     if isinstance(id,int): id=str(id)
     if isinstance(value,str): value=int(value)
@@ -145,5 +146,38 @@ def updateselect(request, id=None, value=0):
                 result = favorites.del_photo(id)
                 #result=user.userprofile.del_selected(id)
 
+    response = HttpResponse()
+    response['Content-Type']="text/javascript"
     response.write("{user:%s,id:%s,value:%s,result:%s}"%(user.username,id,value,result))
+    return response
+
+def download_collection(request, collection_id=None):
+
+    if collection_id==None:
+        return Http404
+
+    collection = PhotoCollections.objects.get(id=collection_id)
+
+    in_memory = BytesIO()
+    zip = ZipFile(in_memory, "a")
+
+    for id in collection.get_list():
+        if id!=None and id!='':
+            f=PhotoImages.objects.get(id=int(id))
+            prev_path=os.path.join(PHOTOGAL_THUMBS_ROOT,f.album.tag,f.path,addthumb(f.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
+            zip.write(prev_path, f.filename)
+
+    # fix for Linux zip files read in Windows
+    for file in zip.filelist:
+        file.create_system = 0
+
+    zip.close()
+
+    response = HttpResponse()
+    response["Content-Type"]="application/zip"
+    response["Content-Disposition"] = "attachment; filename=files.zip"
+
+    in_memory.seek(0)
+    response.write(in_memory.read())
+
     return response

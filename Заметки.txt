@@ -86,3 +86,7 @@ import django
 os.environ['DJANGO_SETTINGS_MODULE']='HM.settings'
 from django.conf import settings
 django.setup()
+
+
+-- Об архивации на лету
+http://chase-seibert.github.io/blog/2010/07/23/django-zip-files-create-dynamic-in-memory-archives-with-pythons-zipfile.html

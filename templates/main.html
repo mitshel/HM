@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/foundation.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "foundation-icons/foundation-icons.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "swipebox/src/css/swipebox.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "gal/photogal.css" %}"  media="screen">
 
@@ -19,6 +20,7 @@
 </head>
 
 <body>
+
 <!-- Строка навигации -->
 <div class="row"><div class="contain-to-grid sticky">
 <nav class="top-bar" data-topbar role="navigation">
@@ -53,7 +55,7 @@
        <ul class="right">
            {% if user.username %}
                {% if user.is_superuser %}
-               <li><a href="/auth/settings/">Настройка </a></li>
+               <li></i><a href="/auth/settings/">Настройка </a></li>
                {% endif %}
                <li><a href="/accounts/logout/">Выйти ({{ user.username }})</a></li>
            {% else %}
@@ -61,8 +63,6 @@
            {% endif %}
        </ul>
    </section>
-
-
 </nav>
 </div></div>
 
@@ -74,6 +74,18 @@
             <a href="{{ f.href }}" class="{{ f.cl }}">{{ f.title }}</a>
         {% endfor %}
     </nav>
+</div></div>
+{% endif %}
+
+<!-- CollectionIcon Bar -->
+{% if collection %}
+<div class="row"><div class="small-12 columns">
+<dl class="sub-nav" style="margin:0; padding: 0">
+  <dd style="margin:0; padding:0"><a href="#" style="padding-left: 0"><i class="fi-page-copy"></i>&nbsp;Копировать</a></dd>
+  <dd style="margin:0; padding:0"><a href="#" style="padding-left: 0"><i class="fi-page-delete"></i>&nbsp;Очистить</a></dd>
+  <dd style="margin:0; padding:0"><a href="/photo/collect/dl/{{ collection.id }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить</a></dd>
+  <dd style="margin:0; padding:0"><a href="#" style="padding-left: 0"><i class="fi-mail"></i>&nbsp;Отправить</a></dd>
+</dl>
 </div></div>
 {% endif %}
 
