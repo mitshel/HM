@@ -202,7 +202,10 @@ def download_collection(request, collection_id=None):
     return response
 
 def copy_collection(request, collection_id=None):
-    return show_collection(request, collection_id)
+    return redirect('/photo/collect/%s/'%collection_id)
 
 def clear_collection(request, collection_id=None):
-    return show_collection(request, collection_id)
+    if collection_id!=None:
+       collection = PhotoCollections.objects.get(id=collection_id)
+       collection.clear()
+    return redirect('/photo/collect/%s/'%collection_id)

@@ -67,6 +67,8 @@ http://habrahabr.ru/post/165081/
 http://dbmast.ru/15-adaptivnyh-jquery-plaginov-lightbox
 -- Понравился swipebox
 http://brutaldesign.github.io/swipebox/#download
+--  И еще на его основе...
+https://blueimp.github.io/Gallery/
 
 -- Покупки/продажи через сайт
 http://www.inattack.ru/article/sumburnyie-zametki-pro-python-i-django/603.html#.Vg_Cnyvl99d

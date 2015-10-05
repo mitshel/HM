@@ -2,6 +2,32 @@
 {% load staticfiles %}
 
 {% block title %}{{ app_name }}{% endblock %}
+{% block  subnav %}
+<!-- CollectionIcon Bar -->
+{% if collection %}
+<div class="row"><div class="small-12 columns">
+<dl class="sub-nav" style="margin:0; padding: 0">
+  <dd style="margin:0; padding:0"><a href="/photo/collect/copy/{{ collection.id }}/" style="padding-left: 0"><i class="fi-page-copy"></i>&nbsp;Копировать все</a></dd>
+  <dd style="margin:0; padding:0"><a href="#" data-reveal-id="YesNoModal" style="padding-left: 0"><i class="fi-page-delete"></i>&nbsp;Очистить коллекцию</a></dd>
+  <dd style="margin:0; padding:0"><a href="/photo/collect/dl/{{ collection.id }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить одним архивом</a></dd>
+  <dd style="margin:0; padding:0"><a href="#" style="padding-left: 0"><i class="fi-mail"></i>&nbsp;Отправить</a></dd>
+</dl>
+</div></div>
+{% endif %}
+{% endblock %}
+
+{% block modaldialog %}
+<div class="row">
+<div id="YesNoModal" class="reveal-modal small" data-reveal aria-labelledby="YesNoModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="YesNoModalTitle">Подтвердите очистку.</h2>
+  <p>Нажмите <code>"Да"</code>, если Вы хотите удалить все изображения из текущей коллекции. В противном случае выберите <code>"Нет"</code></p>
+  <p class="text-center"><a href="/photo/collect/clear/{{ collection.id }}/" class="secondary button">Да</a>
+                         &nbsp;&nbsp;&nbsp;<a class="button close">Нет</a></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+</div>
+{% endblock %}
+
 {% block content %}
     <div class="large-12 columns">
     <div class="row">
@@ -40,5 +66,9 @@
            $.getJSON("/photo/updateselect/" + chb.id + "/" + (chb.checked ? 1 : 0) +"/")
            $("input[id="+chb.id+"]").prop("checked", chb.checked);
        }
-    </script>
+
+        $('a.close').on('click', function() {
+            $('#YesNoModal').foundation('reveal', 'close');
+        });
+        </script>
 {% endblock %}
