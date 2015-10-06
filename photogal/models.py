@@ -81,7 +81,8 @@ class PhotoCollections(models.Model):
         if s_id in selected:
             return None
         else:
-            selected.append(s_id)
+            if not s_id in selected:
+                selected.append(s_id)
             self.photo_list = LIST_DIVIDER.join(selected)
             self.save()
             return s_id
@@ -114,6 +115,7 @@ class PhotoCollections(models.Model):
         source_list = self.get_list()
         target_list = target.get_list()
         target_list+=source_list
+        target_list=list(set(target_list))
         target.photo_list=LIST_DIVIDER.join(target_list)
         target.save()
 
