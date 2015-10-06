@@ -104,6 +104,21 @@ class PhotoCollections(models.Model):
         self.photo_list = LIST_DIVIDER.join(selected)
         self.save()
 
+    def copy(self, user=None, target=None):
+        if user==None:
+            return None
+
+        if target==None:
+            return None
+
+        source_list = self.get_list()
+        target_list = target.get_list()
+        target_list+=source_list
+        target.photo_list=LIST_DIVIDER.join(target_list)
+        target.save()
+
+        return target.id
+
     def get_list(self):
         if self.photo_list==None or self.photo_list=='':
             selected=[]
@@ -125,7 +140,7 @@ class PhotoCollections(models.Model):
 
     class Meta:
         verbose_name_plural = 'Photo Collections'
-        ordering = ['title']
+        ordering = ['-favorite', 'title']
 
 def addcat(album, rel_path):
     try:

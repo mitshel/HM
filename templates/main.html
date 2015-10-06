@@ -45,7 +45,7 @@
                 <a href="#">Коллекции</a>
                 <ul class="dropdown">
                 {% for c in collections %}
-                        {% if c.id == collection.id %}<li class="active">{% else %}<li>{% endif %}<a href="/photo/collect/{{ c.id }}/">{{ c.title }}</a></li>
+                        {% if c.id == collection.id %}<li class="active">{% else %}<li>{% endif %}<a href="/photo/collect/{{ c.id }}/">{{ c.title }}{% if c.favorite %}&nbsp;<img src="{% static "gal\star-on.png" %}" width="16" height="16">{% endif %}</a></li>
                 {% endfor %}
                 </ul>
             </li>

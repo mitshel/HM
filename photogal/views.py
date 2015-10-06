@@ -201,11 +201,60 @@ def download_collection(request, collection_id=None):
 
     return response
 
-def copy_collection(request, collection_id=None):
-    return redirect('/photo/collect/%s/'%collection_id)
+def copy_collection(request, source_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if source_id==None:
+        return Http404
+
+    try:
+        source = PhotoCollections.objects.get(uid=user, id=source_id)
+    except PhotoCollections.DoesNotExist:
+        return Http404
+
+    args = RequestContext(request)
+    args.update(csrf(request))
+    if request.POST:
+        new_or_choice = request.POST.get('new_or_choice', '')
+        title = request.POST.get('title', '')
+        choice_id = int(request.POST.get('choice', '0'))
+
+        if new_or_choice.lower()=='new':
+           target = PhotoCollections.objects.create(uid=user, title=title)
+        else:
+           target = PhotoCollections.objects.get(uid=user, id=choice_id)
+
+        target_id = source.copy(user, target)
+        return redirect('/photo/collect/%s/'%target_id)
+    else:
+        return redirect('/photo/collect/%s/'%source_id)
+
+def settings_collection(request, collection_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if collection_id==None:
+        return Http404
+
+    try:
+        collection = PhotoCollections.objects.get(uid=user, id=collection_id)
+    except PhotoCollections.DoesNotExist:
+        return Http404
+
+    args = RequestContext(request)
+    args.update(csrf(request))
+    if request.POST:
+        title = request.POST.get('title', '')
+        collection.title=title
+        collection.save()
+        return redirect('/photo/collect/%s/'%collection_id)
 
 def clear_collection(request, collection_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
     if collection_id!=None:
-       collection = PhotoCollections.objects.get(id=collection_id)
-       collection.clear()
-    return redirect('/photo/collect/%s/'%collection_id)
+       collection = PhotoCollections.objects.get(uid=user, id=collection_id)
+       collection.delete()
+    return redirect('/photo/collect/')
