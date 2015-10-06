@@ -256,5 +256,8 @@ def clear_collection(request, collection_id=None):
         return Http404
     if collection_id!=None:
        collection = PhotoCollections.objects.get(uid=user, id=collection_id)
-       collection.delete()
+       if collection.favorite:
+            collection.clear()
+       else:
+            collection.delete()
     return redirect('/photo/collect/')

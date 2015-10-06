@@ -30,11 +30,11 @@
   <h3 id="AddCollectModalTitle">Копирование фотографий в другую коллекцию.</h3>
   <form method="post" action="/photo/collect/copy/{{ collection.id }}/" name="AddCollectForm">
   {% csrf_token %}
-      <input type="radio" name="new_or_choice" value="new" id="new_radio"><label for="new_radio">Новая коллекция</label>
-      <label>Введите название новой коллекции изображений:<input type="text" name="title" /></label>
-      <input type="radio" name="new_or_choice" value="choice" id="choice_radio" checked><label for="choice_radio">Существующая коллекция</label>
+      <input type="radio" name="new_or_choice" value="new" id="addcollect_radio1"><label for="new_radio">Новая коллекция</label>
+      <label>Введите название новой коллекции изображений:<input type="text" name="title" id="addcollect_title"/></label>
+      <input type="radio" name="new_or_choice" value="choice" id="addcollect_radio2" checked><label for="choice_radio">Существующая коллекция</label>
       <label>Выберите коллекцию для копирования изображений:
-          <select name="choice">
+          <select name="choice" id="addcollect_choice">
               {% for c in collections %}
                   <!-- Не предлагаем копировать сами в себя -->
                   {% if c.id != collection.id %}
@@ -43,7 +43,7 @@
               {% endfor %}
           </select>
       </label>
-    <p class="text-center"><input class="button" type="submit" value="Копировать">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a>
+    <p class="text-center"><input class="button" type="submit" value="Копировать" id="addcollect_submit">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a>
     </p>
   </form>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
@@ -51,10 +51,10 @@
 
 <div id="SettingsCollectModal" class="reveal-modal small" data-reveal aria-labelledby="SettingsCollectModalTitle" aria-hidden="true" role="dialog">
   <h3 id="SettingsCollectModalTitle">Настройки коллекции.</h3>
-  <form method="post" action="/photo/collect/settings/{{ collection.id }}/">
+  <form method="post" action="/photo/collect/settings/{{ collection.id }}/" name="settings_form">
   {% csrf_token %}
-      <label>Имя коллекции изображений:<input type="text" name="title" value="{{ collection.title }}"/></label>
-    <p class="text-center"><input class="button" type="submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a>
+      <label>Имя коллекции изображений:<input type="text" name="title" value="{{ collection.title }}" id="settings_title"/></label>
+    <p class="text-center"><input class="button" type="submit" id="settings_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a>
     </p>
   </form>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
@@ -103,6 +103,39 @@
 
         $('a.close').on('click', function() {
             $('#YesNoModal').foundation('reveal', 'close');
+        });
+
+        $('#settings_submit').click(function(){
+            if ($('#settings_title').val()=='') {
+                $('#settings_title').css({'border-color':'#d8512d'});
+                setTimeout(function() {
+                    $('#settings_title').removeAttr('style');
+                },500);
+                return false
+            }
+            else {
+                $('#settings_form').submit()
+            }
+        });
+
+        $('#addcollect_submit').click(function(){
+            if (($('#addcollect_title').val()=='') && ($('#addcollect_radio1').is(':checked'))) {
+                $('#addcollect_title').css({'border-color':'#d8512d'});
+                setTimeout(function() {
+                    $('#addcollect_title').removeAttr('style');
+                },500);
+                return false
+            }
+            else if (($('#addcollect_choice').val()==null) && ($('#addcollect_radio2').is(':checked'))) {
+                $('#addcollect_choice').css({'border-color':'#d8512d'});
+                setTimeout(function() {
+                    $('#addcollect_choice').removeAttr('style');
+                },500);
+                return false
+            }
+            else {
+                $('#addcollect_form').submit()
+            }
         });
     </script>
 {% endblock %}
