@@ -33,9 +33,9 @@
   <h3 id="AddCollectModalTitle">Копирование фотографий в другую коллекцию.</h3>
   <form method="post" action="/photo/collect/copy/{{ collection.id }}/" name="AddCollectForm">
   {% csrf_token %}
-      <input type="radio" name="new_or_choice" value="new" id="addcollect_radio1"><label for="new_radio">Новая коллекция</label>
+      <input type="radio" name="new_or_choice" value="new" id="addcollect_radio1"><label for="addcollect_radio1">Новая коллекция</label>
       <label>Введите название новой коллекции изображений:<input type="text" name="title" id="addcollect_title"/></label>
-      <input type="radio" name="new_or_choice" value="choice" id="addcollect_radio2" checked><label for="choice_radio">Существующая коллекция</label>
+      <input type="radio" name="new_or_choice" value="choice" id="addcollect_radio2" checked><label for="addcollect_radio2">Существующая коллекция</label>
       <label>Выберите коллекцию для копирования изображений:
           <select name="choice" id="addcollect_choice">
               {% for c in collections %}
