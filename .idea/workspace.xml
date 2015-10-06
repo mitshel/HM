@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/models.py" afterPath="$PROJECT_DIR$/photogal/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/album.html" afterPath="$PROJECT_DIR$/photogal/templates/album.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -61,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photogal_photocollections" pinned="false" current-in-tab="true">
+      <file leaf-file-name="photogal_photocollections" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_photocollections">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -98,18 +98,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="album.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.423077">
-              <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.44715446">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding>
-                <element signature="e#341#364#0#HTML" expanded="true" />
-                <element signature="e#3991#4011#0#HTML" expanded="true" />
-                <element signature="e#4163#4233#0#HTML" expanded="true" />
-                <element signature="e#4527#4548#0#HTML" expanded="true" />
-                <element signature="e#5022#5040#0#HTML" expanded="true" />
-                <element signature="e#5408#5460#0#HTML" expanded="true" />
+                <element signature="e#342#365#0#HTML" expanded="true" />
+                <element signature="e#4070#4090#0#HTML" expanded="true" />
+                <element signature="e#4242#4312#0#HTML" expanded="true" />
+                <element signature="e#4606#4627#0#HTML" expanded="true" />
+                <element signature="e#5101#5119#0#HTML" expanded="true" />
+                <element signature="e#5487#5539#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,8 +212,8 @@
         <option value="$PROJECT_DIR$/photogal/urls.py" />
         <option value="$PROJECT_DIR$/templates/main.html" />
         <option value="$PROJECT_DIR$/photogal/views.py" />
-        <option value="$PROJECT_DIR$/photogal/templates/album.html" />
         <option value="$PROJECT_DIR$/photogal/models.py" />
+        <option value="$PROJECT_DIR$/photogal/templates/album.html" />
       </list>
     </option>
   </component>
@@ -785,7 +785,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444156675356</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Auto delete dublicates in collection list">
+      <created>1444157050351</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1444157050351</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -852,7 +858,8 @@
     <MESSAGE value="Create Clear Collection reveal-modal dialog" />
     <MESSAGE value="Create copy and settings for new galary collections" />
     <MESSAGE value="Create JQuery Scripts for validate AddColelctForm and SettingForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create JQuery Scripts for validate AddColelctForm and SettingForm" />
+    <MESSAGE value="Auto delete dublicates in collection list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auto delete dublicates in collection list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1241,21 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.423077">
-          <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
-          <folding>
-            <element signature="e#341#364#0#HTML" expanded="true" />
-            <element signature="e#3991#4011#0#HTML" expanded="true" />
-            <element signature="e#4163#4233#0#HTML" expanded="true" />
-            <element signature="e#4527#4548#0#HTML" expanded="true" />
-            <element signature="e#5022#5040#0#HTML" expanded="true" />
-            <element signature="e#5408#5460#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1276,6 +1268,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44715446">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#342#365#0#HTML" expanded="true" />
+            <element signature="e#4070#4090#0#HTML" expanded="true" />
+            <element signature="e#4242#4312#0#HTML" expanded="true" />
+            <element signature="e#4606#4627#0#HTML" expanded="true" />
+            <element signature="e#5101#5119#0#HTML" expanded="true" />
+            <element signature="e#5487#5539#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

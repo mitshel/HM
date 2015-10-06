@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block title %}{{ app_name }}{% endblock %}
+
 {% block  subnav %}
 <!-- CollectionIcon Bar -->
 {% if collection %}
@@ -13,10 +14,12 @@
   <dd style="margin:0; padding:0"><a href="#" data-reveal-id="SettingsCollectModal" style="padding-left: 0"><i class="fi-widget"></i>&nbsp;Настройки коллекции</a></dd>
 </dl>
 </div></div>
+<!-- if collection -->
 {% endif %}
 {% endblock %}
 
 {% block modaldialog %}
+{% if collection %}
 <div class="row">
 <div id="YesNoModal" class="reveal-modal small" data-reveal aria-labelledby="YesNoModalTitle" aria-hidden="true" role="dialog">
   <h3 id="YesNoModalTitle">Подтвердите удаление коллекции <b>"{{ collection.title }}"</b>.</h3>
@@ -60,6 +63,8 @@
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 </div>
+<!-- if collection -->
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -101,6 +106,7 @@
            $("input[id="+chb.id+"]").prop("checked", chb.checked);
        }
 
+{% if collection %}
         $('a.close').on('click', function() {
             $('#YesNoModal').foundation('reveal', 'close');
         });
@@ -137,5 +143,7 @@
                 $('#addcollect_form').submit()
             }
         });
+<!-- if collection -->
+{% endif %}
     </script>
 {% endblock %}
