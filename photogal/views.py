@@ -129,11 +129,17 @@ def show_collection(request, collection_id=None):
     photos=[]
     images=PhotoImages.objects.filter(Q(id__in = collection.get_list()))
 
+    try:
+        favorites = PhotoCollections.objects.get(uid=user, favorite=True).get_list()
+    except PhotoCollections.DoesNotExist:
+        favorites = []
+
     for i in images:
         full_path=os.path.join(i.album.base_path,i.path,i.filename).replace('\\','/')
         thumb_path=os.path.join(settings.PHOTOGAL_THUMBS_DIR,i.album.tag,i.path,addthumb(i.filename,settings.PHOTOGAL_THUMB_STR)).replace('\\','/')
         prev_path=os.path.join(settings.PHOTOGAL_THUMBS_DIR,i.album.tag,i.path,addthumb(i.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
-        photos.append(element(1, i.id, i.title, full_path, thumb_path, prev_path,'', i.errorflag, True))
+        checked=(str(i.id) in favorites)
+        photos.append(element(1, i.id, i.title, full_path, thumb_path, prev_path,'', i.errorflag, checked))
 
     args['photos'] = photos
     args['collection'] = collection
@@ -229,6 +235,36 @@ def copy_collection(request, source_id=None):
         return redirect('/photo/collect/%s/'%target_id)
     else:
         return redirect('/photo/collect/%s/'%source_id)
+
+def copy_photo(request, photo_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if photo_id==None:
+        return Http404
+
+    result=None
+
+    if isinstance(photo_id,int): photo_id=str(photo_id)
+
+    args = RequestContext(request)
+    args.update(csrf(request))
+    if request.POST:
+        new_or_choice = request.POST.get('new_or_choice', '')
+        title = request.POST.get('title', '')
+        choice_id = int(request.POST.get('choice', '0'))
+
+        if new_or_choice.lower()=='new':
+           target = PhotoCollections.objects.create(uid=user, title=title)
+        else:
+           target = PhotoCollections.objects.get(uid=user, id=choice_id)
+
+        result=target.add_photo(photo_id)
+
+    response = HttpResponse()
+    response['Content-Type']="text/javascript"
+    response.write("{user:%s,id:%s,result:%s}"%(user.username,photo_id,result))
+    return response
 
 def settings_collection(request, collection_id=None):
     user=request.user
