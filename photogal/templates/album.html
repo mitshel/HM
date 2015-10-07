@@ -87,10 +87,13 @@
                 </a>
                 <div style="margin: 0;">
                     <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><i class="fi-star icon-style"></i></label>
-                    <a href="#" onclick="photo2collection({{ p.id }});"><i class="fi-plus icon-style"></i></a>
-                    <i class="fi-refresh icon-style"></i>
-                    <i class="fi-page-edit icon-style"></i>
-                    <a href="{{ MEDIA_URL }}{{p.prev_path}}" download><i class="fi-download icon-style"></i></a>
+                    <a href="#" onclick="photo2collection({{ p.id }});" title="Добавить в коллекцию"><i class="fi-plus icon-style"></i></a>
+                    {% if collection %}
+                    <a href="#" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
+                    {% endif %}
+                    <a href="#" title="Повернуть"><i class="fi-refresh icon-style"></i></a>
+                    <a href="#" title="Изменить"><i class="fi-page-edit icon-style"></i></a>
+                    <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
