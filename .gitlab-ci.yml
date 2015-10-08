@@ -7,7 +7,7 @@ stages:
   - deploy
 
 build:
-  stage: build
+  stage: deploy
   script: cp -rf ./ /home/www/homemediacat/
   only:
     - master
