@@ -709,7 +709,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444323860774</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="remove db.sqlite3 from cache (git rm --cached db.sqlite3)">
+      <created>1444324075160</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1444324075160</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -762,7 +768,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Addittional error handling in addimage functions (Image.open and Image.crop)" />
     <MESSAGE value="Create permissions mechanism by auth.groups. Fix error in links to main albums page." />
     <MESSAGE value="For PhotoGallery now used &quot;swipebox&quot; instead of &quot;clearing lightebox&quot;" />
     <MESSAGE value="Extends UserProfile in hm_auth.models.UserProfile class. Added select_list field" />
@@ -787,7 +792,8 @@
     <MESSAGE value="Test #4 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #5 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="add db.sqlite3 to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add db.sqlite3 to .gitignore" />
+    <MESSAGE value="remove db.sqlite3 from cache (git rm --cached db.sqlite3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove db.sqlite3 from cache (git rm --cached db.sqlite3)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
