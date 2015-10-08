@@ -92,3 +92,9 @@ django.setup()
 
 -- Об архивации на лету
 http://chase-seibert.github.io/blog/2010/07/23/django-zip-files-create-dynamic-in-memory-archives-with-pythons-zipfile.html
+
+-- Django, NGINX, production
+http://www.pvsm.ru/nginx/62473
+
+
+
