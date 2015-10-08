@@ -112,8 +112,9 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 #THUMBNAIL_BASEDIR = 'thumbs'
 
 STATIC_URL = '/static/'
+STATIC_ROOT= os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "assets"),
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

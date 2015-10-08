@@ -89,12 +89,20 @@ os.environ['DJANGO_SETTINGS_MODULE']='HM.settings'
 from django.conf import settings
 django.setup()
 
-
 -- Об архивации на лету
 http://chase-seibert.github.io/blog/2010/07/23/django-zip-files-create-dynamic-in-memory-archives-with-pythons-zipfile.html
 
 -- Django, NGINX, production
 http://www.pvsm.ru/nginx/62473
 
+-- О деплое и Static files
+http://zetblog.ru/programming/201303/django-static_root-staticfiles_dirs-media_root/
 
+-- Для перемещения всех статических файлов, в том числе статики для админки в
+   общую папку static необходимо в процессе деплоя выполнить команду:
+   manage.py collectstatic
+
+
+-- Высокопроизводительный сайт на Django
+https://xakep.ru/2012/03/30/ngnix-with-diango/
 
