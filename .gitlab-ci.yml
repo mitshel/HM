@@ -1,0 +1,13 @@
+before_script:
+  - ls -l
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script: cp -rf . \tmp\HM\
+  only:
+    - master
