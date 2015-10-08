@@ -8,6 +8,6 @@ stages:
 
 build:
   stage: build
-  script: cp -rf ./ /tmp/HM/
+  script: cp -rf ./ /home/www/homemediacat/
   only:
     - master
