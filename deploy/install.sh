@@ -3,6 +3,8 @@
 DEPLOY_DIR='/home/www/homemediacat/'
 
 cp -rf HM assets hm_auth photogal static templates manage.py README.md $DEPLOY_DIR
+chmod -R g+rw $DEPLOY_DIR
+chown -R www:www $DEPLOY_DIR
 
 rem cp -rf ./HM $DEPLOY_DIR"HM"
 rem cp -rf ./assets $DEPLOY_DIR"assets"
