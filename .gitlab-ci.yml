@@ -8,6 +8,6 @@ stages:
 
 build:
   stage: deploy
-  script: cp -rf ./ /home/www/homemediacat/
+  script: ./deploy/install.sh
   only:
     - master
