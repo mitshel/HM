@@ -102,6 +102,8 @@ http://zetblog.ru/programming/201303/django-static_root-staticfiles_dirs-media_r
    общую папку static необходимо в процессе деплоя выполнить команду:
    manage.py collectstatic
 
+-- Информация о SUDO
+http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
 
 -- Высокопроизводительный сайт на Django
 https://xakep.ru/2012/03/30/ngnix-with-diango/

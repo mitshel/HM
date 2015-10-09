@@ -1,5 +1,5 @@
 before_script:
-  - chmod u+x ./deploy/install.sh
+  - chmod a+x ./deploy/install.sh; chmod -R a+r *
 
 stages:
   - build
