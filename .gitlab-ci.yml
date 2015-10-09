@@ -1,5 +1,5 @@
 before_script:
-  - ls -l; who am i
+  - chmod u+x ./deploy/install.sh
 
 stages:
   - build
