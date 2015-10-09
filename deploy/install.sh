@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set DEPLOY_DIR = '/home/www/homemediacat/'
+DEPLOY_DIR='/home/www/homemediacat/'
 
 cp -rf ./ $DEPLOY_DIR"HM"
 cp -rf ./assets $DEPLOY_DIR"assets"

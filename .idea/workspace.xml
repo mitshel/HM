@@ -123,8 +123,8 @@
       <file leaf-file-name="install.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0609319">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -760,7 +760,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444386307690</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Fix #3 deploy script">
+      <created>1444386454796</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1444386454796</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -813,7 +819,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Stylize checkbox for favorites input (.favstar class)" />
     <MESSAGE value="Fix erors with multiuser work. AAdd user in filter for Get PhotoCollections" />
     <MESSAGE value="Create download icon." />
     <MESSAGE value="Create download collection in one archive" />
@@ -838,7 +843,8 @@
     <MESSAGE value="New deploy script" />
     <MESSAGE value="Fix deploy script" />
     <MESSAGE value="Fix #2 deploy script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix #2 deploy script" />
+    <MESSAGE value="Fix #3 deploy script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix #3 deploy script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1249,8 +1255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0609319">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
