@@ -26,6 +26,7 @@ SECRET_KEY = 'kz8qy3v1lebcc3pcofjbwf4)ortx$f0&o=sc&3lnvm()om8=ej'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DEPLOY = False
 
 ALLOWED_HOSTS = []
 
@@ -82,13 +83,28 @@ WSGI_APPLICATION = 'HM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# Develop Database
+if not DEPLOY:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+# End Develop Database
 
+# Deploy Database
+if DEPLOY:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'homemediacat',
+            'HOST': 'localhost',
+            'USER': 'hmc',
+            'PASSWORD' : '19hMc74'
+        }
+    }
+# End Develop Database
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
