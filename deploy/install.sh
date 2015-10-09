@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 DEPLOY_DIR = '/home/www/homemediacat/'
 
