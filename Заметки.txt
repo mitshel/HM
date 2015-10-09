@@ -104,6 +104,8 @@ http://zetblog.ru/programming/201303/django-static_root-staticfiles_dirs-media_r
 
 -- Информация о SUDO
 http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
+http://www.cyberciti.biz/faq/linux-unix-bsd-sudo-sorry-you-must-haveattytorun/
+https://blog.lisss.ru/archives/4
 
 -- Высокопроизводительный сайт на Django
 https://xakep.ru/2012/03/30/ngnix-with-diango/
