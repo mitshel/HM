@@ -1,2 +1,4 @@
 media
 db.sqlite3
+hm_auth/old-migrations
+photogal/old-migrations

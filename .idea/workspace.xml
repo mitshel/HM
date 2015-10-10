@@ -2,78 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0001_squashed_0005_auto_20151003_1620.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0001_squashed_0023_photocollections.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0002_auto_20150920_1601.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0002_auto_20151003_1602.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0002_auto_20151009_1632.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0002_auto_20151009_1632.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/migrations/0002_auto_20151010_1505.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0003_auto_20151003_1605.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0003_setting_description.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0004_auto_20150920_1603.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0004_auto_20151003_1614.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0005_auto_20150920_1607.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0005_auto_20151003_1620.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0006_auto_20150920_1849.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0007_photocat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0008_auto_20150921_1921.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0009_photoimages_cat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0010_photocat_album.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0011_auto_20150921_1958.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0012_auto_20150921_2001.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0013_auto_20150921_2019.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0014_auto_20150921_2033.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0015_photoimages_thumbnail.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0016_auto_20150925_2011.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0017_photoimages_rotateinfo.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0018_auto_20150930_1915.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0019_auto_20150930_1918.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0020_auto_20150930_1919.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0021_auto_20150930_1929.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0022_auto_20150930_1936.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0023_photocollections.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/__init__.py" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0001_squashed_0005_auto_20151003_1620.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0002_auto_20151003_1602.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0002_auto_20151009_1632.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0003_auto_20151003_1605.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0004_auto_20151003_1614.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0005_auto_20151003_1620.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0001_squashed_0023_photocollections.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0002_auto_20150920_1601.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0002_auto_20151009_1632.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0003_setting_description.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0004_auto_20150920_1603.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0005_auto_20150920_1607.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0006_auto_20150920_1849.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0007_photocat.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0008_auto_20150921_1921.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0009_photoimages_cat.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0010_photocat_album.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0011_auto_20150921_1958.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0012_auto_20150921_2001.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0013_auto_20150921_2019.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0014_auto_20150921_2033.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0015_photoimages_thumbnail.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0016_auto_20150925_2011.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0017_photoimages_rotateinfo.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0018_auto_20150930_1915.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0019_auto_20150930_1918.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0020_auto_20150930_1919.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0021_auto_20150930_1929.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0022_auto_20150930_1936.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0023_photocollections.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3.old" afterPath="$PROJECT_DIR$/db.sqlite3.old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/photogal/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/install.sh" afterPath="$PROJECT_DIR$/deploy/install.sh" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0001_squashed_0005_auto_20151003_1620.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0002_auto_20151003_1602.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0002_auto_20151009_1632.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0003_auto_20151003_1605.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0004_auto_20151003_1614.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0005_auto_20151003_1620.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0001_squashed_0023_photocollections.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0002_auto_20150920_1601.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0002_auto_20151009_1632.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0003_setting_description.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0004_auto_20150920_1603.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0005_auto_20150920_1607.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0006_auto_20150920_1849.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0007_photocat.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0008_auto_20150921_1921.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0009_photoimages_cat.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0010_photocat_album.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0011_auto_20150921_1958.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0012_auto_20150921_2001.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0013_auto_20150921_2019.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0014_auto_20150921_2033.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0015_photoimages_thumbnail.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0016_auto_20150925_2011.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0017_photoimages_rotateinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0018_auto_20150930_1915.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0019_auto_20150930_1918.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0020_auto_20150930_1919.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0021_auto_20150930_1929.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0022_auto_20150930_1936.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0023_photocollections.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\__init__.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -180,10 +143,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28705442">
+            <state vertical-scroll-proportion="-6.12">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
@@ -208,8 +171,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.18">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state vertical-scroll-proportion="-7.82">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.095684804">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -233,16 +206,6 @@
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hm_auth/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -288,7 +251,6 @@
         <option value="$PROJECT_DIR$/photogal/views.py" />
         <option value="$PROJECT_DIR$/static/gal/photogal.css" />
         <option value="$PROJECT_DIR$/photogal/templates/album.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
         <option value="$PROJECT_DIR$/hm_auth/models.py" />
         <option value="$PROJECT_DIR$/hm_auth/views.py" />
@@ -301,6 +263,7 @@
         <option value="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/deploy/install.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1042,7 +1005,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444471288049</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Create data migration for auto create default groups and settings">
+      <created>1444492636097</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1444492636097</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1095,7 +1064,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test #1 Gitlab ci" />
     <MESSAGE value="Test #2 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #3 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #4 Gltlab ci (make .gitlab-ci.yaml)" />
@@ -1120,7 +1088,8 @@
     <MESSAGE value="New deploy script written (use DEPLOY= False|True variable in settings.py)" />
     <MESSAGE value="Fix setting.py" />
     <MESSAGE value="Fix PhotoALbums model for migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix PhotoALbums model for migrations" />
+    <MESSAGE value="Create data migration for auto create default groups and settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create data migration for auto create default groups and settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1137,6 +1106,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,13 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1556,18 +1519,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.18">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state vertical-scroll-proportion="-6.12">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28705442">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.82">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.095684804">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
