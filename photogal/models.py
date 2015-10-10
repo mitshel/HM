@@ -23,7 +23,8 @@ class Setting(models.Model):
 class PhotoAlbums(models.Model):
     #default=Setting.objects.get(name='base_path').value
     title = models.CharField(max_length=64, null=False, blank=False)
-    base_path = models.CharField(max_length=256, default=Setting.objects.get(name='base_path').value)
+    #base_path = models.CharField(max_length=256, default=Setting.objects.get(name='base_path').value)
+    base_path = models.CharField(max_length=256, blank=True)
     tag = models.CharField(max_length=16, null=False, blank=False, unique=True)
     allow_group=models.ForeignKey(Group, null=True, blank=True, related_name='allow_group')
     deny_group=models.ForeignKey(Group, null=True, blank=True, related_name='deny_group')
