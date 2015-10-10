@@ -1,26 +1,18 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+from django.contrib.auth.models import Group
 
 from django.db import models, migrations
-from django.conf import settings
 
+def create_std_groups(apps, schema_editor):
+    Group.objects.create(name='any_album_allow_group')
+    Group.objects.create(name='admin_group')
 
 class Migration(migrations.Migration):
 
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='UserProfile',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('select_list', models.TextField()),
-                ('uid', models.OneToOneField(to=settings.AUTH_USER_MODEL)),
-            ],
-            options={
-                'verbose_name_plural': 'User profiles',
-            },
-        ),
+         migrations.RunPython(create_std_groups),
     ]

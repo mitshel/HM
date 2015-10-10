@@ -2,8 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3.old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/models.py" afterPath="$PROJECT_DIR$/photogal/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0001_squashed_0005_auto_20151003_1620.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0001_squashed_0023_photocollections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0002_auto_20150920_1601.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0002_auto_20151003_1602.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0002_auto_20151009_1632.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0002_auto_20151009_1632.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/migrations/0002_auto_20151010_1505.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0003_auto_20151003_1605.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0003_setting_description.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0004_auto_20150920_1603.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0004_auto_20151003_1614.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0005_auto_20150920_1607.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/0005_auto_20151003_1620.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0006_auto_20150920_1849.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0007_photocat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0008_auto_20150921_1921.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0009_photoimages_cat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0010_photocat_album.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0011_auto_20150921_1958.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0012_auto_20150921_2001.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0013_auto_20150921_2019.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0014_auto_20150921_2033.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0015_photoimages_thumbnail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0016_auto_20150925_2011.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0017_photoimages_rotateinfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0018_auto_20150930_1915.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0019_auto_20150930_1918.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0020_auto_20150930_1919.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0021_auto_20150930_1929.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0022_auto_20150930_1936.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/0023_photocollections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hm_auth/old-migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/old-migrations/__init__.py" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0001_squashed_0005_auto_20151003_1620.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0002_auto_20151003_1602.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0002_auto_20151009_1632.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0003_auto_20151003_1605.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0004_auto_20151003_1614.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\migrations\0005_auto_20151003_1620.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0001_squashed_0023_photocollections.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0002_auto_20150920_1601.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0002_auto_20151009_1632.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0003_setting_description.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0004_auto_20150920_1603.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0005_auto_20150920_1607.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0006_auto_20150920_1849.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0007_photocat.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0008_auto_20150921_1921.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0009_photoimages_cat.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0010_photocat_album.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0011_auto_20150921_1958.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0012_auto_20150921_2001.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0013_auto_20150921_2019.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0014_auto_20150921_2033.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0015_photoimages_thumbnail.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0016_auto_20150925_2011.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0017_photoimages_rotateinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0018_auto_20150930_1915.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0019_auto_20150930_1918.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0020_auto_20150930_1919.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0021_auto_20150930_1929.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0022_auto_20150930_1936.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\migrations\0023_photocollections.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3.old" afterPath="$PROJECT_DIR$/db.sqlite3.old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/photogal/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/install.sh" afterPath="$PROJECT_DIR$/deploy/install.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -25,6 +95,20 @@
     <option name="GROUP_BY_TYPE" value="true" />
     <option name="SORT_CHILDREN" value="false" />
     <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="SQLite - [2]" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
     <PATH>
       <PATH_ELEMENT>
         <option name="myItemId" />
@@ -59,18 +143,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0545113">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="14" />
+            <state vertical-scroll-proportion="-6.8076925">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
+              <folding>
+                <element signature="e#25#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_user_groups" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..auth_user_groups">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/116dc914-5186-424f-8b06-fd254a7a15fa/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hm_auth/tests.py">
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy/install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28705442">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_group" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/c3b8cc74/116dc914-5186-424f-8b06-fd254a7a15fa/..auth_group">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.18">
+              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photogal/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -79,42 +225,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Заметки.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Заметки.txt">
+      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hm_auth/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy/install.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.12">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.42">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0001_squashed_0023_photocollections.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photogal/migrations/0001_squashed_0023_photocollections.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding />
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,26 +242,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hm_auth/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -196,11 +294,13 @@
         <option value="$PROJECT_DIR$/hm_auth/views.py" />
         <option value="$PROJECT_DIR$/hm_auth/admin.py" />
         <option value="$PROJECT_DIR$/static/README.md" />
-        <option value="$PROJECT_DIR$/deploy/install.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Заметки.txt" />
         <option value="$PROJECT_DIR$/HM/settings.py" />
+        <option value="$PROJECT_DIR$/photogal/migrations/0002_auto_20151010_1505.py" />
         <option value="$PROJECT_DIR$/photogal/models.py" />
+        <option value="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/deploy/install.sh" />
       </list>
     </option>
   </component>
@@ -298,7 +398,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="photogal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hm_auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hm_auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,7 +475,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db.sqlite3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db.sqlite3.old" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
@@ -900,7 +1036,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444469421904</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Fix PhotoALbums model for migrations">
+      <created>1444471288049</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1444471288049</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -918,12 +1060,12 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36796537" sideWeight="0.557508" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36796537" sideWeight="0.5638978" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.47018105" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.6517572" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2608225" sideWeight="0.44621938" order="2" side_tool="false" content_ui="tabs" x="544" y="398" width="831" height="244" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36796537" sideWeight="0.442492" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2608225" sideWeight="0.44195953" order="2" side_tool="false" content_ui="tabs" x="544" y="398" width="831" height="244" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36796537" sideWeight="0.43610224" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19595315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1943557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -953,7 +1095,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add minus icon." />
     <MESSAGE value="Test #1 Gitlab ci" />
     <MESSAGE value="Test #2 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #3 Gltlab ci (make .gitlab-ci.yaml)" />
@@ -978,7 +1119,8 @@
     <MESSAGE value="Add deploy case for Database in settings.py" />
     <MESSAGE value="New deploy script written (use DEPLOY= False|True variable in settings.py)" />
     <MESSAGE value="Fix setting.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix setting.py" />
+    <MESSAGE value="Fix PhotoALbums model for migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix PhotoALbums model for migrations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1069,55 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0006_auto_20150920_1849.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0011_auto_20150921_1958.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0014_auto_20150921_2033.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0013_auto_20150921_2019.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0012_auto_20150921_2001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/management/commands/list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1147,18 +1240,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..auth_group">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..auth_user_groups">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1217,18 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_photocollections">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1247,16 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="84" selection-start-line="132" selection-start-column="84" selection-end-line="132" selection-end-column="84" />
-          <folding>
-            <element signature="e#25#76#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,14 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hm_auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hm_auth/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1331,22 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.12">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.42">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1375,11 +1410,131 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/migrations/0001_squashed_0023_photocollections.py">
+    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_photocollections">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_photoimages">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <caret line="132" column="84" selection-start-line="132" selection-start-column="84" selection-end-line="132" selection-end-column="84" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..sqlite_sequence">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_setting">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/migrations/0002_auto_20151010_1505.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hm_auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8076925">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="e#25#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..auth_user_groups">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/116dc914-5186-424f-8b06-fd254a7a15fa/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c3b8cc74/116dc914-5186-424f-8b06-fd254a7a15fa/..auth_group">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1391,10 +1546,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/models.py">
+    <entry file="file://$PROJECT_DIR$/hm_auth/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0545113">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.18">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28705442">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
