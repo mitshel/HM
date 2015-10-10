@@ -110,3 +110,5 @@ https://blog.lisss.ru/archives/4
 -- Высокопроизводительный сайт на Django
 https://xakep.ru/2012/03/30/ngnix-with-diango/
 
+-- Удалиение .pyc
+find . -name "*.pyc" -exec rm -- {} +

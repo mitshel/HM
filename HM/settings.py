@@ -40,8 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'photogal',
     'hm_auth',
+    'photogal',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -98,7 +98,7 @@ if DEPLOY:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'homemediacat',
+            'NAME': 'hmc',
             'HOST': 'localhost',
             'USER': 'hmc',
             'PASSWORD' : '19hMc74'
