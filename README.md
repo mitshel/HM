@@ -9,3 +9,13 @@ HMc - программа для каталогизации домашний архивов медиа-файлов. В первую очеред
 именования архивов.
 
 ## Как установить Home Media catalog
+
+### Настройка MySQL
+Для работы каталога необходимо создать базу данных "hmc" и пользователя с необходимыми правами,
+например следующим образом:
+
+ mysql -uroot -proot_pass mysql
+ mysql > create database if not exists hmc default charset=utf8;
+ mysql > grant all on hmc.* to 'hmc'@'localhost' identified by '19hMc74';
+ mysql > commit;
+ mysql > ^C
