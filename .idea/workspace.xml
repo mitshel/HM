@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0001_squashed_0005_auto_20151003_1620.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0002_auto_20151003_1602.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0002_auto_20151009_1632.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0003_auto_20151003_1605.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0004_auto_20151003_1614.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\0005_auto_20151003_1620.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\hm_auth\old-migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0001_squashed_0023_photocollections.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0002_auto_20150920_1601.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0002_auto_20151009_1632.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0003_setting_description.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0004_auto_20150920_1603.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0005_auto_20150920_1607.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0006_auto_20150920_1849.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0007_photocat.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0008_auto_20150921_1921.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0009_photoimages_cat.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0010_photocat_album.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0011_auto_20150921_1958.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0012_auto_20150921_2001.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0013_auto_20150921_2019.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0014_auto_20150921_2033.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0015_photoimages_thumbnail.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0016_auto_20150925_2011.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0017_photoimages_rotateinfo.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0018_auto_20150930_1915.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0019_auto_20150930_1918.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0020_auto_20150930_1919.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0021_auto_20150930_1929.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0022_auto_20150930_1936.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\0023_photocollections.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mitshel\Dropbox\Projects\PyCharm\HM\photogal\old-migrations\__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/install.sh" afterPath="$PROJECT_DIR$/deploy/install.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -143,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.12">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22326455">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -178,10 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.095684804">
+            <state vertical-scroll-proportion="-2.04">
               <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
@@ -262,8 +228,8 @@
         <option value="$PROJECT_DIR$/photogal/models.py" />
         <option value="$PROJECT_DIR$/hm_auth/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/deploy/install.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/deploy/install.sh" />
       </list>
     </option>
   </component>
@@ -1011,7 +977,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444492636097</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Delete old-migrations catalogs on hm_auth and photogal application from git repository">
+      <created>1444492997869</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1444492997869</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1064,7 +1036,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test #2 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #3 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #4 Gltlab ci (make .gitlab-ci.yaml)" />
     <MESSAGE value="Test #5 Gltlab ci (make .gitlab-ci.yaml)" />
@@ -1089,7 +1060,8 @@
     <MESSAGE value="Fix setting.py" />
     <MESSAGE value="Fix PhotoALbums model for migrations" />
     <MESSAGE value="Create data migration for auto create default groups and settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create data migration for auto create default groups and settings" />
+    <MESSAGE value="Delete old-migrations catalogs on hm_auth and photogal application from git repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete old-migrations catalogs on hm_auth and photogal application from git repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1519,14 +1491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.12">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.82">
@@ -1537,8 +1501,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.095684804">
+        <state vertical-scroll-proportion="-2.04">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22326455">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           <folding />
         </state>
       </provider>
