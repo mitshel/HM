@@ -199,8 +199,13 @@ def download_collection(request, collection_id=None):
     zip.close()
 
     response = HttpResponse()
-    response["Content-Type"]="application/zip"
-    response["Content-Disposition"] = "attachment; filename=hmc_%s_%s.zip"%(user.username,translit(collection.title))
+    response["Content-Type"]='application/zip'
+    response["Content-Disposition"] = 'attachment; filename="hmc_%s_%s.zip"'%(user.username,translit(collection.title))
+    response["Content-Transfer-Encoding"]='binary'
+
+    #buf=in_memory.getvalue()
+    #response["Content-Length"]=str(len(buf))
+    #response.write(buf)
 
     in_memory.seek(0)
     response.write(in_memory.read())
