@@ -297,3 +297,23 @@ def clear_collection(request, collection_id=None):
        else:
             collection.delete()
     return redirect('/photo/collect/')
+
+def del_collection_photo(request, collection_id=None, photo_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if collection_id==None:
+        return Http404
+    if photo_id==None:
+        return Http404
+
+    if isinstance(photo_id,int): photo_id=str(photo_id)
+
+    try:
+        collection = PhotoCollections.objects.get(uid=user, id=collection_id)
+    except PhotoCollections.DoesNotExist:
+        return Http404
+
+    collection.del_photo(photo_id)
+
+    return redirect('/photo/collect/%s/'%collection_id)

@@ -28,6 +28,15 @@
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
+<div id="DeletePhotoModal" class="reveal-modal small text-center" data-reveal aria-labelledby="DeletePhotoModalTitle" aria-hidden="true" role="dialog">
+  <h3 id="DeletePhotoModalTitle">Подтвердите удаление ссылки на изображение из коллекции <b>"{{ collection.title }}"</b>.</h3>
+    <div class="th round text-center" style="margin: 5px"><img src="#" id="DeletePhoto_image" height=300 width=200></div>
+  <p>Нажмите <code>"Удалить"</code>, если Вы хотите удалить выбранное изображение из коллекции. В противном случае выберите <code>"Отмена"</code></p>
+  <p class="text-center"><a href="/photo/collect/delete/{{ collection.id }}/" class="secondary button" id="DeletePhoto_btnYes">Удалить</a>
+                         &nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
 <div id="AddCollectModal" class="reveal-modal small" data-reveal aria-labelledby="AddCollectModalTitle" aria-hidden="true" role="dialog">
   <h3 id="AddCollectModalTitle">Копирование фотографий в другую коллекцию.</h3>
   <form method="post" action="/photo/collect/copy/{{ collection.id }}/" name="AddCollectForm" id="addcollect_form">
@@ -86,12 +95,14 @@
                 <img src="{{ MEDIA_URL }}{{p.thumb_path}}" title="{{ p.title }}">
                 </a>
                 <div style="margin: 0;">
-                    <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><i class="fi-star icon-style"></i></label>
+                    {% if not collection.favorite %}
+                       <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><i class="fi-star icon-style"></i></label>
+                    {% endif %}
                     <a href="#" onclick="photo2collection({{ p.id }});" title="Добавить в коллекцию"><i class="fi-plus icon-style"></i></a>
                     {% if collection %}
-                    <a href="#" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
+                       <a href="#" onclick="del_photo({{ collection.id }},{{ p.id }},'{{ p.prev_path }}');" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
                     {% endif %}
-                    <a href="#" title="Повернуть"><i class="fi-refresh icon-style"></i></a>
+                    <!--<a href="#" title="Повернуть"><i class="fi-refresh icon-style"></i></a>-->
                     <a href="#" title="Изменить"><i class="fi-page-edit icon-style"></i></a>
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
                 </div>
@@ -174,6 +185,12 @@
            $('#AddCollectModalTitle').text('Копирование фотографий в другую коллекцию.')
            $('#addcollect_type').attr("value","collection")
            $('#AddCollectModal').foundation('reveal', 'open');
+       }
+
+       function del_photo(c_id, p_id, thumb_path) {
+           $('#DeletePhoto_btnYes').attr("href",'/photo/collect/del/'+c_id+'/'+p_id+'/')
+           $('#DeletePhoto_image').attr("src","{{ MEDIA_URL }}"+thumb_path)
+           $('#DeletePhotoModal').foundation('reveal', 'open');
        }
     </script>
 {% endblock %}
