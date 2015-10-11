@@ -193,8 +193,8 @@ def download_collection(request, collection_id=None):
             zip.write(prev_path, f.filename)
 
     # fix for Linux zip files read in Windows
-    for file in zip.filelist:
-        file.create_system = 0
+    #for file in zip.filelist:
+    #    file.create_system = 0
 
     zip.close()
 
