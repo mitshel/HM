@@ -19,7 +19,6 @@
 {% endblock %}
 
 {% block modaldialog %}
-<div class="row">
 <div id="YesNoModal" class="reveal-modal small" data-reveal aria-labelledby="YesNoModalTitle" aria-hidden="true" role="dialog">
   <h3 id="YesNoModalTitle">Подтвердите удаление коллекции <b>"{{ collection.title }}"</b>.</h3>
   <p>Нажмите <code>"Удалить"</code>, если Вы хотите удалить текущую коллекцию. В противном случае выберите <code>"Отмена"</code></p>
@@ -70,6 +69,19 @@
   </form>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+ <div id="SettingsPhotoModal" class="reveal-modal small" data-reveal aria-labelledby="SettingsPhotoModalTitle" aria-hidden="true" role="dialog">
+  <h3 id="SettingsPhotoModalTitle">Настройки фото.</h3>
+  <form method="post" action="#" name="settings_photo_form" id="settings_photo_form">
+  {% csrf_token %}
+      <label>Изменить наименование фото:<input type="text" name="title" value="" id="settings_photo_title"/></label>
+      <input type="hidden" name="req_path" value="{{ request.path }}">
+    <div class="text-center"><input class="button" type="submit" id="settings_photo_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a></div>
+  </form>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="InfoPhotoModal" class="reveal-modal small text-center" data-reveal aria-labelledby="InfoPhotoModalTitle" aria-hidden="true" role="dialog">
 </div>
 {% endblock %}
 
@@ -102,8 +114,8 @@
                     {% if collection %}
                        <a href="#" onclick="del_photo({{ collection.id }},{{ p.id }},'{{ p.prev_path }}');" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
                     {% endif %}
-                    <!--<a href="#" title="Повернуть"><i class="fi-refresh icon-style"></i></a>-->
-                    <a href="#" title="Изменить"><i class="fi-page-edit icon-style"></i></a>
+                    <a href="#" title="Изменить" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
+                    <a href="#" title="Информация" onclick="info_photo({{ p.id }});"><i class="fi-info icon-style"></i></a>
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
@@ -119,6 +131,8 @@
            $.getJSON("/photo/updateselect/" + chb.id + "/" + (chb.checked ? 1 : 0) +"/")
            $("input[id="+chb.id+"]").prop("checked", chb.checked);
        }
+
+        function close_reveal() { $('div.reveal-modal').foundation('reveal', 'close'); };
 
         $('a.close').on('click', function() {
            $('div.reveal-modal').foundation('reveal', 'close');
@@ -181,16 +195,28 @@
        }
 
        function collection2collection(id) {
-           $('#addcollect_form').attr("action",'/photo/collect/copy/'+id+'/')
-           $('#AddCollectModalTitle').text('Копирование фотографий в другую коллекцию.')
-           $('#addcollect_type').attr("value","collection")
+           $('#addcollect_form').attr("action",'/photo/collect/copy/'+id+'/');
+           $('#AddCollectModalTitle').text('Копирование фотографий в другую коллекцию.');
+           $('#addcollect_type').attr("value","collection");
            $('#AddCollectModal').foundation('reveal', 'open');
        }
 
        function del_photo(c_id, p_id, thumb_path) {
-           $('#DeletePhoto_btnYes').attr("href",'/photo/collect/del/'+c_id+'/'+p_id+'/')
-           $('#DeletePhoto_image').attr("src","{{ MEDIA_URL }}"+thumb_path)
+           $('#DeletePhoto_btnYes').attr("href",'/photo/collect/del/'+c_id+'/'+p_id+'/');
+           $('#DeletePhoto_image').attr("src","{{ MEDIA_URL }}"+thumb_path);
            $('#DeletePhotoModal').foundation('reveal', 'open');
        }
+
+       function stts_photo(p_id, name) {
+           $('#settings_photo_form').attr("action",'/photo/settings/'+p_id+'/');
+           $('#settings_photo_title').attr("value",name);
+           $('#SettingsPhotoModal').foundation('reveal', 'open');
+       }
+
+       function info_photo(p_id) {
+           $('#InfoPhotoModal').foundation('reveal', 'open','/photo/info/'+p_id+'/');
+       }
+
+
     </script>
 {% endblock %}

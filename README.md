@@ -35,3 +35,30 @@ manage.py createsuperuser, как указано ниже:
     Password (again):
     Superuser created successfully.
 
+### Особенности настройки NGINX:
+Особое внимание нужно уделить параметру uwsgi_buffers. При указанных ниже параметрах uWSGI сможет
+передать в NGINX 1024k x 32 = 32Мб информации. Учитывая, что архивы коллекций могут занимать и большие объемы,
+возможно это число нужно будет увеличить.
+    server {
+        listen       80;
+        server_name  photo.dsnet.ru;
+        root         /home/www/homemediacat/;
+        # обслуживание медиа файлов и статики
+        location /media  {
+                 alias /home/www/homemediacat/media;  # расположение медиафайлов
+        }
+        location /static {
+                 alias /home/www/homemediacat/static;  # расположение статики
+        }
+
+        location / {
+                uwsgi_pass         unix:/var/run/uwsgi/uwsgi.sock;
+                uwsgi_buffers      32                      1024k;
+                include            uwsgi_params;
+
+                uwsgi_param        UWSGI_CHDIR             /home/www/homemediacat;
+                uwsgi_param        UWSGI_FILE              HM/wsgi.py;
+        }
+
+    }
+

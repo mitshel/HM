@@ -322,3 +322,40 @@ def del_collection_photo(request, collection_id=None, photo_id=None):
     collection.del_photo(photo_id)
 
     return redirect('/photo/collect/%s/'%collection_id)
+
+def settings_photo(request, photo_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if photo_id==None:
+        return Http404
+
+    try:
+        photo = PhotoImages.objects.get(id=photo_id)
+    except PhotoImages.DoesNotExist:
+        return Http404
+
+    args = RequestContext(request)
+    args.update(csrf(request))
+    if request.POST:
+        title = request.POST.get('title', '')
+        request_path = request.POST.get('req_path', '')
+        photo.title=title
+        photo.save()
+        return redirect(request_path)
+
+def info_photo(request, photo_id=None):
+    user=request.user
+    if not user.is_authenticated():
+        return Http404
+    if photo_id==None:
+        return Http404
+
+    try:
+        photo = PhotoImages.objects.get(id=photo_id)
+    except PhotoImages.DoesNotExist:
+        return Http404
+    args = RequestContext(request)
+    args['photo']=photo
+    args['image_path']=os.path.join(settings.PHOTOGAL_THUMBS_DIR,photo.album.tag,photo.path,addthumb(photo.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
+    return render_to_response('info.html', args)
