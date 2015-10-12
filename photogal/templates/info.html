@@ -1,10 +1,11 @@
   <h3 id="InfoPhotoModalTitle">Информация о фото.</h3>
     <div class="th round text-center" style="margin: 5px"><img src="{{ MEDIA_URL }}{{ image_path }}" style="max-height: 300px; max-width: 300px" ></div>
      <p class="text-left">
-        <b>ID:</b>{{ photo.id }}<br>
-        <b>Title:</b>{{ photo.title }}<br>
-        <b>Path:</b>{{ photo.path }}{{ photo.filename }}<br>
-        <b>Album:</b>{{ photo.album }} ({{ photo.album.tag }})<br>
+        <b>Album:</b>&nbsp;{{ photo.album }} ({{ photo.album.tag }})<br>
+        <b>Album path:</b>&nbsp;{{ photo.album.base_path }}<br>
+        <b>Photo Path:</b>&nbsp;/{{ photo.path }}/{{ photo.filename }}<br>
+        <b>Photo ID:</b>&nbsp;{{ photo.id }}<br>
+        <b>Photo Title:</b>&nbsp;{{ photo.title }}<br>
      </p>
   <p class="text-center"><a class="button" onclick="close_reveal();">Закрыть</a></p>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>

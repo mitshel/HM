@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photogal/templates/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/album.html" afterPath="$PROJECT_DIR$/photogal/templates/album.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/urls.py" afterPath="$PROJECT_DIR$/photogal/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/views.py" afterPath="$PROJECT_DIR$/photogal/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/info.html" afterPath="$PROJECT_DIR$/photogal/templates/info.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HM.iws" />
@@ -93,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/photogal/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="355" column="36" selection-start-line="355" selection-start-column="36" selection-end-line="355" selection-end-column="36" />
+              <caret line="354" column="42" selection-start-line="354" selection-start-column="42" selection-end-line="354" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -102,8 +98,8 @@
       <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.346154">
-              <caret line="134" column="31" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="31" />
+            <state vertical-scroll-proportion="-8.115385">
+              <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
               <folding>
                 <element signature="e#8098#8147#0#HTML" expanded="true" />
               </folding>
@@ -114,8 +110,8 @@
       <file leaf-file-name="info.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photogal/templates/info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29929578">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15977444">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
@@ -667,12 +663,6 @@
       <option name="number" value="Default" />
       <updated>1442509893754</updated>
     </task>
-    <task id="LOCAL-00007" summary="Fix erors with multiuser work. AAdd user in filter for Get PhotoCollections">
-      <created>1443974893883</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1443974893883</updated>
-    </task>
     <task id="LOCAL-00008" summary="Create download icon.">
       <created>1443976562822</created>
       <option name="number" value="00008" />
@@ -961,7 +951,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444589834106</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Created functions: Edit Photo Title, Show Photo Info.">
+      <created>1444676810099</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1444676810100</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView">
@@ -978,12 +974,13 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.3509052" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.47018105" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.64909476" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.64909476" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2608225" sideWeight="0.42917997" order="2" side_tool="false" content_ui="tabs" x="544" y="398" width="831" height="244" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36796537" sideWeight="0.4259851" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36796537" sideWeight="0.4259851" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20447284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -991,7 +988,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935064" sideWeight="0.49361023" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1014,7 +1010,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix deploy script" />
     <MESSAGE value="Fix #2 deploy script" />
     <MESSAGE value="Fix #3 deploy script" />
     <MESSAGE value="Fix #4 deploy script" />
@@ -1039,7 +1034,8 @@
     <MESSAGE value="remove windows hack for zip archive in &quot;download_collection&quot; view" />
     <MESSAGE value="restore windows hack for zip archive in &quot;download_collection&quot; view" />
     <MESSAGE value="Testing archive downloading with uwsgi_buffers NGINX parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing archive downloading with uwsgi_buffers NGINX parameter" />
+    <MESSAGE value="Created functions: Edit Photo Title, Show Photo Info." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created functions: Edit Photo Title, Show Photo Info." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1443,14 +1439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="355" column="36" selection-start-line="355" selection-start-column="36" selection-end-line="355" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/..photogal_photoimages">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1464,10 +1452,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photogal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="354" column="42" selection-start-line="354" selection-start-column="42" selection-end-line="354" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.346154">
-          <caret line="134" column="31" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="31" />
+        <state vertical-scroll-proportion="-8.115385">
+          <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
           <folding>
             <element signature="e#8098#8147#0#HTML" expanded="true" />
           </folding>
@@ -1476,8 +1472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photogal/templates/info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29929578">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15977444">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
