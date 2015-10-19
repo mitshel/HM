@@ -49,7 +49,7 @@ class PhotoCats(models.Model):
 
     class Meta:
         verbose_name_plural = 'Photo Catalogs'
-        ordering = ['name']
+        ordering = ['-name']
 
 class PhotoImages(models.Model):
     title = models.CharField(max_length=256, null=False, blank=False)
