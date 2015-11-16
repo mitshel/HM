@@ -13,6 +13,7 @@ urlpatterns = patterns('',
                        url(r'^collect/del/(\d+)/(\d+)/$', 'photogal.views.del_collection_photo'),
                        url(r'^collect/settings/(\d+)/$', 'photogal.views.settings_collection'),
                        url(r'^collect/clear/(\d+)/$', 'photogal.views.clear_collection'),
+                       url(r'^collect/guest/(\w+)/$', 'photogal.views.guest_collection'),
                        url(r'^updateselect/(\d+)/(\d+)/$', 'photogal.views.updateselect'),
                        url(r'^', 'photogal.views.hello'),
                        )

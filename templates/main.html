@@ -93,11 +93,15 @@
 <!-- Контент -->
 <div class="row"><div class="large-12 columns">
     <p></p>
-    {% if user.username %}
-        {% block modaldialog %}{% endblock %}
-        {% block content %}{% endblock %}
+    {% if guest_access %}
+        {% block guest %}{% endblock %}
     {% else %}
-        {% block login %}{% endblock %}
+        {% if user.username %}
+            {% block modaldialog %}{% endblock %}
+            {% block content %}{% endblock %}
+        {% else %}
+            {% block login %}{% endblock %}
+        {% endif %}
     {% endif %}
     <p></p>
 </div></div>

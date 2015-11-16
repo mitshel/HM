@@ -11,6 +11,8 @@ import os
 from io import StringIO, BytesIO
 from zipfile import ZipFile
 from django.http import HttpResponse
+import random
+import string
 
 def translit(s):
    """Russian translit: converts 'привет'->'privet'"""
@@ -44,6 +46,7 @@ def photogal_processor(request):
     args={}
     args['app_name']=settings.PHOTOGAL_APP_NAME
     args['app_ver']='0.01'
+    args['PHOTOGAL_GUEST_URL'] = settings.PHOTOGAL_GUEST_URL
     user=request.user
     if user.is_authenticated():
         args['albums']=PhotoAlbums.objects.filter(Q(allow_group__in=user.groups.values('id'))&~Q(deny_group__in=user.groups.values('id')))
@@ -287,7 +290,15 @@ def settings_collection(request, collection_id=None):
     args.update(csrf(request))
     if request.POST:
         title = request.POST.get('title', '')
+        gaccess = request.POST.get('gaccess', False)
+        if gaccess:
+            if not collection.access_hash:
+                collection.access_hash = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(settings.PHOTOGAL_GUEST_HASH_LENGTH))
+        else:
+            collection.access_hash = None
+
         collection.title=title
+        collection.guest_access = gaccess
         collection.save()
         return redirect('/photo/collect/%s/'%collection_id)
 
@@ -359,3 +370,42 @@ def info_photo(request, photo_id=None):
     args['photo']=photo
     args['image_path']=os.path.join(settings.PHOTOGAL_THUMBS_DIR,photo.album.tag,photo.path,addthumb(photo.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
     return render_to_response('info.html', args)
+
+def guest_collection(request, guest_hash=None):
+    args = RequestContext(request)
+    collection = None
+    if guest_hash!=None:
+        try:
+            collection = PhotoCollections.objects.get(access_hash=guest_hash)
+        except PhotoCollections.DoesNotExist:
+            collection = None
+
+    if  collection == None:
+        return Http404
+
+    breadcumbs=[]
+    #cl='current'
+    #breadcumbs.insert(0,breadcumb(collection.title,"/photo/collect/%s/"%collection.id,cl))
+    #breadcumbs.insert(0,breadcumb('Коллекции',"/photo/collect/",))
+
+    photos=[]
+    images=PhotoImages.objects.filter(Q(id__in = collection.get_list()))
+
+    #try:
+    #    favorites = PhotoCollections.objects.get(uid=user, favorite=True).get_list()
+    #except PhotoCollections.DoesNotExist:
+    #    favorites = []
+
+    for i in images:
+        full_path=os.path.join(i.album.base_path,i.path,i.filename).replace('\\','/')
+        thumb_path=os.path.join(settings.PHOTOGAL_THUMBS_DIR,i.album.tag,i.path,addthumb(i.filename,settings.PHOTOGAL_THUMB_STR)).replace('\\','/')
+        prev_path=os.path.join(settings.PHOTOGAL_THUMBS_DIR,i.album.tag,i.path,addthumb(i.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
+        checked=False
+        photos.append(element(1, i.id, i.title, full_path, thumb_path, prev_path,'', i.errorflag, checked))
+
+    args['photos'] = photos
+    args['collection'] = collection
+    args['breadcumbs'] = breadcumbs
+    args['guest_access'] = True
+
+    return render_to_response('album.html', args)

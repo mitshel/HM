@@ -142,3 +142,8 @@ PHOTOGAL_THUMBS_SQUARE = True
 PHOTOGAL_PREVIEW_SIZE = 1024
 PHOTOGAL_THUMB_STR = 'thumb'
 PHOTOGAL_PREV_STR = 'prev'
+PHOTOGAL_GUEST_HASH_LENGTH = 16
+if DEPLOY:
+    PHOTOGAL_GUEST_URL = 'http://photo.dsnet.ru/photo/collect/guest/'
+else:
+    PHOTOGAL_GUEST_URL = 'http://127.0.0.1:8000/photo/collect/guest/'

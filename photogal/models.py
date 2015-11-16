@@ -73,6 +73,8 @@ class PhotoCollections(models.Model):
     title = models.CharField(max_length=256, null=False, blank=False)
     photo_list = models.TextField(null=True, blank=True)
     favorite = models.BooleanField(null=False, default=False)
+    access_hash = models.CharField(max_length=32, null=True, blank=True)
+    guest_access = models.BooleanField(null=False, default=False)
 
     def add_photo(self, s_id=None):
         if self.photo_list==None or self.photo_list=='':

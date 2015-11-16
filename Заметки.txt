@@ -5,82 +5,82 @@ Password:
 Password (again):
 Superuser created successfully.
 
--- Для работы галлереи нужен pillow:
+-- Р”Р»СЏ СЂР°Р±РѕС‚С‹ РіР°Р»Р»РµСЂРµРё РЅСѓР¶РµРЅ pillow:
     pip install  pillow
 
--- Для создания миниатюр возможно лучше воспользоваться библиотекой
-    http://easy-thumbnails.readthedocs.org/en/2.1/usage/      ( или http://thumbnail.sorl.net/ - не пробовал )
-    Устанавливаем командой:
+-- Р”Р»СЏ СЃРѕР·РґР°РЅРёСЏ РјРёРЅРёР°С‚СЋСЂ РІРѕР·РјРѕР¶РЅРѕ Р»СѓС‡С€Рµ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р±РёР±Р»РёРѕС‚РµРєРѕР№
+    http://easy-thumbnails.readthedocs.org/en/2.1/usage/      ( РёР»Рё http://thumbnail.sorl.net/ - РЅРµ РїСЂРѕР±РѕРІР°Р» )
+    РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РєРѕРјР°РЅРґРѕР№:
         pip install easy-thumbnails
-    после чего добавить в settings.py:
+    РїРѕСЃР»Рµ С‡РµРіРѕ РґРѕР±Р°РІРёС‚СЊ РІ settings.py:
         INSTALLED_APPS = (
             ...
             'easy_thumbnails',
         )
-    и затем выполнить следующую команду миграции:
+    Рё Р·Р°С‚РµРј РІС‹РїРѕР»РЅРёС‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ РєРѕРјР°РЅРґСѓ РјРёРіСЂР°С†РёРё:
         manage.py migrate easy_thumbnails
 
 
-http://djbook.ru/ch12.html - Сессии, пользователи и регистрация
-http://djbook.ru/ch12s04.html - О пользователях, группах, сообщениях и профилях.
-http://djbook.ru/rel1.8/ref/settings.html#std:setting-SESSION_COOKIE_AGE - о настройках проекта
-http://djbook.ru/examples/33/ - о работе с медиа (MEDIA,STATIC)
+http://djbook.ru/ch12.html - РЎРµСЃСЃРёРё, РїРѕР»СЊР·РѕРІР°С‚РµР»Рё Рё СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+http://djbook.ru/ch12s04.html - Рћ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏС…, РіСЂСѓРїРїР°С…, СЃРѕРѕР±С‰РµРЅРёСЏС… Рё РїСЂРѕС„РёР»СЏС….
+http://djbook.ru/rel1.8/ref/settings.html#std:setting-SESSION_COOKIE_AGE - Рѕ РЅР°СЃС‚СЂРѕР№РєР°С… РїСЂРѕРµРєС‚Р°
+http://djbook.ru/examples/33/ - Рѕ СЂР°Р±РѕС‚Рµ СЃ РјРµРґРёР° (MEDIA,STATIC)
 
 
--- Асинхронное выполенние задач
-http://habrahabr.ru/post/123902/ - о Django-Celery
+-- РђСЃРёРЅС…СЂРѕРЅРЅРѕРµ РІС‹РїРѕР»РµРЅРЅРёРµ Р·Р°РґР°С‡
+http://habrahabr.ru/post/123902/ - Рѕ Django-Celery
 http://larin.in/archives/100
 
--- Создание собственных команд
+-- РЎРѕР·РґР°РЅРёРµ СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РєРѕРјР°РЅРґ
 http://djbook.ru/rel1.8/howto/custom-management-commands.html
 
 
 
--- Команды для сканирования/удаления альбмомов
+-- РљРѕРјР°РЅРґС‹ РґР»СЏ СЃРєР°РЅРёСЂРѕРІР°РЅРёСЏ/СѓРґР°Р»РµРЅРёСЏ Р°Р»СЊР±РјРѕРјРѕРІ
 manage.py list
 manage.py scan <album_tag_name>
 manage.py clear <album_tag_name>
 
 
--- Интересные плагины для Django
+-- РРЅС‚РµСЂРµСЃРЅС‹Рµ РїР»Р°РіРёРЅС‹ РґР»СЏ Django
 http://cultofdigits.com/articles/django-cms/5-ispolzovanie-plaginov/
 
 
--- Хорошие книги - можно купить
+-- РҐРѕСЂРѕС€РёРµ РєРЅРёРіРё - РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ
 http://www.bhv.ru/books/book.php?id=193488
 
--- Инфомация по значениям EXIF Orientation
+-- РРЅС„РѕРјР°С†РёСЏ РїРѕ Р·РЅР°С‡РµРЅРёСЏРј EXIF Orientation
 http://www.impulseadventure.com/photo/exif-orientation.html
 
--- Неплохое описанеи ZURB Foundation на русском
+-- РќРµРїР»РѕС…РѕРµ РѕРїРёСЃР°РЅРµРё ZURB Foundation РЅР° СЂСѓСЃСЃРєРѕРј
 http://zencoder.ru/css/css-grid-zurb-foundation-5/
 
--- Играемся с PIL
+-- РРіСЂР°РµРјСЃСЏ СЃ PIL
 http://habrahabr.ru/post/163663/
 
--- Инструмент для Деплоя - Fabric
+-- РРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ Р”РµРїР»РѕСЏ - Fabric
 http://www.fabfile.org/
 http://habrahabr.ru/post/141271/
 http://habrahabr.ru/post/165081/
 
--- Об адаптивных галлереях LightBox
+-- РћР± Р°РґР°РїС‚РёРІРЅС‹С… РіР°Р»Р»РµСЂРµСЏС… LightBox
 http://dbmast.ru/15-adaptivnyh-jquery-plaginov-lightbox
--- Понравился swipebox
+-- РџРѕРЅСЂР°РІРёР»СЃСЏ swipebox
 http://brutaldesign.github.io/swipebox/#download
---  И еще на его основе...
+--  Р РµС‰Рµ РЅР° РµРіРѕ РѕСЃРЅРѕРІРµ...
 https://blueimp.github.io/Gallery/
 
--- Покупки/продажи через сайт
+-- РџРѕРєСѓРїРєРё/РїСЂРѕРґР°Р¶Рё С‡РµСЂРµР· СЃР°Р№С‚
 http://www.inattack.ru/article/sumburnyie-zametki-pro-python-i-django/603.html#.Vg_Cnyvl99d
 
--- Об изменении модели пользователя
+-- РћР± РёР·РјРµРЅРµРЅРёРё РјРѕРґРµР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 http://www.ruspython.com/blog/izmenenie-modeli-polzovatelya-django/
 http://djbook.ru/examples/47/
 
--- Изменение внешнего вида ChekcBoxов
+-- РР·РјРµРЅРµРЅРёРµ РІРЅРµС€РЅРµРіРѕ РІРёРґР° ChekcBoxРѕРІ
 http://xiper.net/collect/html-and-css-tricks/verstka-form/nice-checkbox
 
--- О отестировании проектов Django
+-- Рћ РѕС‚РµСЃС‚РёСЂРѕРІР°РЅРёРё РїСЂРѕРµРєС‚РѕРІ Django
 http://habrahabr.ru/post/122156/
 
 import os
@@ -89,26 +89,32 @@ os.environ['DJANGO_SETTINGS_MODULE']='HM.settings'
 from django.conf import settings
 django.setup()
 
--- Об архивации на лету
+-- РћР± Р°СЂС…РёРІР°С†РёРё РЅР° Р»РµС‚Сѓ
 http://chase-seibert.github.io/blog/2010/07/23/django-zip-files-create-dynamic-in-memory-archives-with-pythons-zipfile.html
 
 -- Django, NGINX, production
 http://www.pvsm.ru/nginx/62473
 
--- О деплое и Static files
+-- Рћ РґРµРїР»РѕРµ Рё Static files
 http://zetblog.ru/programming/201303/django-static_root-staticfiles_dirs-media_root/
 
--- Для перемещения всех статических файлов, в том числе статики для админки в
-   общую папку static необходимо в процессе деплоя выполнить команду:
+-- Р”Р»СЏ РїРµСЂРµРјРµС‰РµРЅРёСЏ РІСЃРµС… СЃС‚Р°С‚РёС‡РµСЃРєРёС… С„Р°Р№Р»РѕРІ, РІ С‚РѕРј С‡РёСЃР»Рµ СЃС‚Р°С‚РёРєРё РґР»СЏ Р°РґРјРёРЅРєРё РІ
+   РѕР±С‰СѓСЋ РїР°РїРєСѓ static РЅРµРѕР±С…РѕРґРёРјРѕ РІ РїСЂРѕС†РµСЃСЃРµ РґРµРїР»РѕСЏ РІС‹РїРѕР»РЅРёС‚СЊ РєРѕРјР°РЅРґСѓ:
    manage.py collectstatic
 
--- Информация о SUDO
+-- РРЅС„РѕСЂРјР°С†РёСЏ Рѕ SUDO
 http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
 http://www.cyberciti.biz/faq/linux-unix-bsd-sudo-sorry-you-must-haveattytorun/
 https://blog.lisss.ru/archives/4
 
--- Высокопроизводительный сайт на Django
+-- Р’С‹СЃРѕРєРѕРїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅС‹Р№ СЃР°Р№С‚ РЅР° Django
 https://xakep.ru/2012/03/30/ngnix-with-diango/
 
--- Удалиение .pyc
+-- РЈРґР°Р»РёРµРЅРёРµ .pyc
 find . -name "*.pyc" -exec rm -- {} +
+
+-- Р“РµРЅРµСЂР°С†РёСЏ СЂР°РЅРґРѕРјРЅРѕР№ СЃС‚СЂРѕРєРё
+http://michael-borisov.com/2012/11/02/python-generate-random-string/
+
+-- РќРѕРІС€РµСЃС‚РІР° Django 1.7
+http://habrahabr.ru/post/224249/

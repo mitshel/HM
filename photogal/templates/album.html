@@ -8,10 +8,12 @@
 {% if collection %}
 <div class="row"><div class="small-12 columns">
 <dl class="sub-nav" style="margin:0; padding: 0">
+  {% if not guest_access %}
   <dd style="margin:0; padding:0"><a href="#" onClick="collection2collection({{ collection.id }});" style="padding-left: 0"><i class="fi-page-copy"></i>&nbsp;Копировать все</a></dd>
   <dd style="margin:0; padding:0"><a href="#" data-reveal-id="YesNoModal" style="padding-left: 0"><i class="fi-page-delete"></i>&nbsp;Удалить коллекцию</a></dd>
-  <dd style="margin:0; padding:0"><a href="/photo/collect/dl/{{ collection.id }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить одним архивом</a></dd>
   <dd style="margin:0; padding:0"><a href="#" data-reveal-id="SettingsCollectModal" style="padding-left: 0"><i class="fi-widget"></i>&nbsp;Настройки коллекции</a></dd>
+  <dd style="margin:0; padding:0"><a href="/photo/collect/dl/{{ collection.id }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить одним архивом</a></dd>
+  {%  endif %}
 </dl>
 </div></div>
 <!-- if collection -->
@@ -65,7 +67,12 @@
   <form method="post" action="/photo/collect/settings/{{ collection.id }}/" name="settings_form">
   {% csrf_token %}
       <label>Имя коллекции изображений:<input type="text" name="title" value="{{ collection.title }}" id="settings_title"/></label>
-    <div class="text-center"><input class="button" type="submit" id="settings_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a></div>
+      <label><input type="checkbox" name="gaccess" id="settings_guest" {% if collection.guest_access %}checked{% endif %} /> Включить гостевой доступ:</label>
+      {% if collection.guest_access %}
+      <label>URL гостевого доступа: <br><i>{{ PHOTOGAL_GUEST_URL }}{{ collection.access_hash }}/</i></label>
+      {% endif %}
+      <br>
+      <div class="text-center"><input class="button" type="submit" id="settings_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a></div>
   </form>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
@@ -116,6 +123,25 @@
                     {% endif %}
                     <a href="#" title="Изменить" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
                     <a href="#" title="Информация" onclick="info_photo({{ p.id }});"><i class="fi-info icon-style"></i></a>
+                    <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
+                </div>
+                <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+{% endblock %}
+
+{% block guest %}
+    <div class="large-12 columns">
+    <div class="row">
+        <ul class="clearing-thumbs small-block-grid-3 medium-block-grid-4 large-block-grid-6">
+        {%  for p in photos %}
+                <li class="text-center" style="padding: 5px;">
+                <a href="{{ MEDIA_URL }}{{p.prev_path}}" class="th round swipebox" title="<input type='checkbox' class='favstar' id='{{ p.id }}' onclick='update_select(this);' {% if p.checked %}checked{% endif %}/><label for='{{ p.id }}'><i class='fi-star icon-style'></i></label><a href='{{ MEDIA_URL }}{{p.prev_path}}' download> File:{{ p.title }}</a>, ID:{{ p.id }}">
+                <img src="{{ MEDIA_URL }}{{p.thumb_path}}" title="{{ p.title }}">
+                </a>
+                <div style="margin: 0;">
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
