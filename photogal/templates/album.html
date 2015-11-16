@@ -69,7 +69,7 @@
       <label>Имя коллекции изображений:<input type="text" name="title" value="{{ collection.title }}" id="settings_title"/></label>
       <label><input type="checkbox" name="gaccess" id="settings_guest" {% if collection.guest_access %}checked{% endif %} /> Включить гостевой доступ:</label>
       {% if collection.guest_access %}
-      <label>URL гостевого доступа: <br><i>{{ PHOTOGAL_GUEST_URL }}{{ collection.access_hash }}/</i></label>
+      <label>URL гостевого доступа: <br><i><a href="{{ PHOTOGAL_GUEST_URL }}{{ collection.access_hash }}/">{{ PHOTOGAL_GUEST_URL }}{{ collection.access_hash }}/</a></i></label>
       {% endif %}
       <br>
       <div class="text-center"><input class="button" type="submit" id="settings_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close">Отмена</a></div>
