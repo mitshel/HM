@@ -9,4 +9,5 @@ sudo -u www cp -rf HM assets hm_auth photogal templates static manage.py README.
 sudo -u www sed -i "s/DEPLOY = False/DEPLOY = True/g" $DEPLOY_DIR"HM/settings.py"
 sudo -u www python3 $MANAGE_PY collectstatic --noinput
 sudo -u www python3 $MANAGE_PY migrate
+sudo /usr/bin/systemctl restart uwsgi
 
