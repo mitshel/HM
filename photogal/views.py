@@ -384,17 +384,8 @@ def guest_collection(request, guest_hash=None):
         return Http404
 
     breadcumbs=[]
-    #cl='current'
-    #breadcumbs.insert(0,breadcumb(collection.title,"/photo/collect/%s/"%collection.id,cl))
-    #breadcumbs.insert(0,breadcumb('Коллекции',"/photo/collect/",))
-
     photos=[]
     images=PhotoImages.objects.filter(Q(id__in = collection.get_list()))
-
-    #try:
-    #    favorites = PhotoCollections.objects.get(uid=user, favorite=True).get_list()
-    #except PhotoCollections.DoesNotExist:
-    #    favorites = []
 
     for i in images:
         full_path=os.path.join(i.album.base_path,i.path,i.filename).replace('\\','/')
@@ -407,5 +398,46 @@ def guest_collection(request, guest_hash=None):
     args['collection'] = collection
     args['breadcumbs'] = breadcumbs
     args['guest_access'] = True
+    args['guest_hash'] = guest_hash
 
     return render_to_response('album.html', args)
+
+def guest_download_collection(request, guest_hash=None):
+    collection = None
+    if guest_hash!=None:
+        try:
+            collection = PhotoCollections.objects.get(access_hash=guest_hash)
+        except PhotoCollections.DoesNotExist:
+            collection = None
+
+    if  collection == None:
+        return Http404
+
+    in_memory = BytesIO()
+    zip = ZipFile(in_memory, "a")
+
+    for id in collection.get_list():
+        if id!=None and id!='':
+            f=PhotoImages.objects.get(id=int(id))
+            prev_path=os.path.join(PHOTOGAL_THUMBS_ROOT,f.album.tag,f.path,addthumb(f.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
+            zip.write(prev_path, f.filename)
+
+    # fix for Linux zip files read in Windows
+    for file in zip.filelist:
+        file.create_system = 0
+
+    zip.close()
+
+    response = HttpResponse()
+    response["Content-Type"]='application/zip'
+    response["Content-Disposition"] = 'attachment; filename="hmc_%s_%s.zip"'%('guest',translit(collection.title))
+    response["Content-Transfer-Encoding"]='binary'
+
+    #buf=in_memory.getvalue()
+    #response["Content-Length"]=str(len(buf))
+    #response.write(buf)
+
+    in_memory.seek(0)
+    response.write(in_memory.read())
+
+    return response

@@ -14,6 +14,7 @@ urlpatterns = patterns('',
                        url(r'^collect/settings/(\d+)/$', 'photogal.views.settings_collection'),
                        url(r'^collect/clear/(\d+)/$', 'photogal.views.clear_collection'),
                        url(r'^collect/guest/(\w+)/$', 'photogal.views.guest_collection'),
+                       url(r'^collect/guest/dl/(\w+)/$', 'photogal.views.guest_download_collection'),
                        url(r'^updateselect/(\d+)/(\d+)/$', 'photogal.views.updateselect'),
                        url(r'^', 'photogal.views.hello'),
                        )

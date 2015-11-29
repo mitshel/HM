@@ -13,6 +13,8 @@
   <dd style="margin:0; padding:0"><a href="#" data-reveal-id="YesNoModal" style="padding-left: 0"><i class="fi-page-delete"></i>&nbsp;Удалить коллекцию</a></dd>
   <dd style="margin:0; padding:0"><a href="#" data-reveal-id="SettingsCollectModal" style="padding-left: 0"><i class="fi-widget"></i>&nbsp;Настройки коллекции</a></dd>
   <dd style="margin:0; padding:0"><a href="/photo/collect/dl/{{ collection.id }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить одним архивом</a></dd>
+  {% else %}
+  <dd style="margin:0; padding:0"><a href="/photo/collect/guest/dl/{{ guest_hash }}/" style="padding-left: 0"><i class="fi-archive"></i>&nbsp;Загрузить одним архивом</a></dd>
   {%  endif %}
 </dl>
 </div></div>
