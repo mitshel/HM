@@ -118,3 +118,14 @@ http://michael-borisov.com/2012/11/02/python-generate-random-string/
 
 -- Новшества Django 1.7
 http://habrahabr.ru/post/224249/
+
+-- Использование SASS (или LESS) нужно начать разбираться
+
+-- Хорошие плагины на jQuery, в том числе текстовые редакторы
+http://2coders.ru/25-poleznyx-plaginov-na-jquery/
+http://www.webmasters.by/articles/review-po/103-useful-wysiwyg-html-editor.html
+http://allcheats.ru/t215537/
+
+-- Текстовые редакторы
+http://ckeditor.com/demo
+http://nicedit.com/demos.php - этот простой и есть вставка изображений с диска

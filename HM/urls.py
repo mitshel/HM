@@ -25,6 +25,3 @@ urlpatterns += [
     url(r'^photo/',include('photogal.urls')),
     url(r'^',include('photogal.urls')),
 ]
-
-#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-#urlpatterns += staticfiles_urlpatterns()

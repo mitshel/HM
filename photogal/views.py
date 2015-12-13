@@ -2,7 +2,7 @@
 
 from django.template import Context, RequestContext
 from django.shortcuts import render_to_response, redirect, Http404
-from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, PhotoCollections, addthumb, PHOTOGAL_THUMBS_ROOT
 from django.conf import settings
 from django.db.models import Q

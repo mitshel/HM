@@ -5,10 +5,309 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c2481-bfd1-4777-b829-512487163ef7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitlab-ci.yml" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HM.iml" afterPath="$PROJECT_DIR$/.idea/HM.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/album.html" afterPath="$PROJECT_DIR$/photogal/templates/album.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HM/urls.py" afterPath="$PROJECT_DIR$/HM/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-address-book.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-address-book.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-alert.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-alert.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-center.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-center.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-justify.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-justify.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-left.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-left.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-right.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-align-right.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-anchor.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-anchor.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-annotate.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-annotate.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-archive.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-archive.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-down.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-down.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-left.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-left.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-right.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-right.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-up.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrow-up.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-compress.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-compress.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-expand.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-expand.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-in.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-in.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-out.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-arrows-out.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-asl.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-asl.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-asterisk.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-asterisk.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-at-sign.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-at-sign.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-background-color.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-background-color.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-empty.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-empty.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-full.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-full.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-half.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-battery-half.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bitcoin-circle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bitcoin-circle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bitcoin.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bitcoin.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-blind.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-blind.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bluetooth.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bluetooth.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bold.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bold.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-book-bookmark.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-book-bookmark.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-book.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-book.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bookmark.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-bookmark.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-braille.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-braille.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst-new.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst-new.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst-sale.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst-sale.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-burst.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-calendar.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-calendar.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-camera.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-camera.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-check.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-check.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-checkbox.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-checkbox.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard-notes.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard-notes.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard-pencil.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard-pencil.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clipboard.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clock.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-clock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-closed-caption.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-closed-caption.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-cloud.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-cloud.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-minus.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-minus.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-quotes.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-quotes.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-video.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment-video.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comment.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comments.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-comments.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-compass.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-compass.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-contrast.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-contrast.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-credit-card.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-credit-card.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-crop.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-crop.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-crown.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-crown.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-css3.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-css3.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-database.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-database.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-five.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-five.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-four.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-four.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-one.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-one.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-six.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-six.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-three.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-three.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-two.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-die-two.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dislike.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dislike.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dollar-bill.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dollar-bill.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dollar.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-dollar.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-download.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-download.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-eject.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-eject.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-elevator.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-elevator.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-euro.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-euro.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-eye.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-eye.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-fast-forward.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-fast-forward.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-female-symbol.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-female-symbol.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-female.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-female.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-filter.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-filter.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-first-aid.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-first-aid.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-flag.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-flag.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder-add.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder-add.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder-lock.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder-lock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-folder.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-foot.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-foot.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-foundation.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-foundation.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-bar.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-bar.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-horizontal.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-horizontal.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-pie.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-pie.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-trend.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-graph-trend.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-guide-dog.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-guide-dog.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-hearing-aid.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-hearing-aid.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-heart.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-heart.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-home.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-home.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-html5.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-html5.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-indent-less.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-indent-less.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-indent-more.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-indent-more.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-info.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-info.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-italic.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-italic.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-key.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-key.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-laptop.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-laptop.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-layout.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-layout.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-lightbulb.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-lightbulb.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-like.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-like.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-link.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-link.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-bullet.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-bullet.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-number.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-number.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-thumbnails.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list-thumbnails.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-list.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-lock.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-lock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-loop.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-loop.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-magnifying-glass.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-magnifying-glass.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mail.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mail.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male-female.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male-female.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male-symbol.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male-symbol.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-male.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-map.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-map.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-marker.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-marker.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-megaphone.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-megaphone.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-microphone.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-microphone.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-minus-circle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-minus-circle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-minus.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-minus.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mobile-signal.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mobile-signal.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mobile.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mobile.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-monitor.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-monitor.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mountains.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-mountains.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-music.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-music.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-next.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-next.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-no-dogs.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-no-dogs.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-no-smoking.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-no-smoking.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-add.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-add.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-copy.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-copy.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-csv.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-csv.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-delete.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-delete.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-doc.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-doc.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-edit.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-edit.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-csv.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-csv.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-doc.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-doc.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-pdf.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export-pdf.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-export.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-filled.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-filled.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-multiple.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-multiple.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-pdf.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-pdf.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-remove.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-remove.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-search.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page-search.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-page.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paint-bucket.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paint-bucket.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paperclip.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paperclip.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pause.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pause.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paw.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paw.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paypal.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-paypal.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pencil.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pencil.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-photo.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-photo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play-circle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play-circle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play-video.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play-video.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-play.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-plus.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-plus.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pound.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pound.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-power.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-power.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-previous.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-previous.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-price-tag.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-price-tag.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pricetag-multiple.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-pricetag-multiple.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-print.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-print.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-prohibited.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-prohibited.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-projection-screen.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-projection-screen.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-puzzle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-puzzle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-quote.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-quote.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-record.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-record.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-refresh.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-refresh.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-results-demographics.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-results-demographics.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-results.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-results.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rewind-ten.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rewind-ten.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rewind.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rewind.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rss.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-rss.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-safety-cone.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-safety-cone.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-save.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-save.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-share.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-share.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-sheriff-badge.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-sheriff-badge.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shield.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shield.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shopping-bag.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shopping-bag.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shopping-cart.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shopping-cart.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shuffle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-shuffle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-skull.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-skull.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-500px.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-500px.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-adobe.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-adobe.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-amazon.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-amazon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-android.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-android.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-apple.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-apple.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-behance.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-behance.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-bing.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-bing.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-blogger.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-blogger.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-delicious.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-delicious.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-designer-news.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-designer-news.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-deviant-art.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-deviant-art.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-digg.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-digg.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-dribbble.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-dribbble.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-drive.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-drive.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-dropbox.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-dropbox.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-evernote.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-evernote.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-facebook.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-facebook.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-flickr.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-flickr.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-forrst.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-forrst.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-foursquare.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-foursquare.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-game-center.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-game-center.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-github.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-github.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-google-plus.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-google-plus.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-hacker-news.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-hacker-news.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-hi5.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-hi5.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-instagram.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-instagram.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-joomla.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-joomla.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-lastfm.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-lastfm.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-linkedin.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-linkedin.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-medium.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-medium.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-myspace.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-myspace.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-orkut.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-orkut.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-path.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-path.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-picasa.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-picasa.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-pinterest.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-pinterest.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-rdio.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-rdio.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-reddit.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-reddit.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-skillshare.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-skillshare.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-skype.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-skype.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-smashing-mag.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-smashing-mag.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-snapchat.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-snapchat.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-spotify.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-spotify.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-squidoo.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-squidoo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-stack-overflow.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-stack-overflow.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-steam.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-steam.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-stumbleupon.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-stumbleupon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-treehouse.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-treehouse.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-tumblr.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-tumblr.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-twitter.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-twitter.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-vimeo.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-vimeo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-windows.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-windows.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-xbox.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-xbox.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-yahoo.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-yahoo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-yelp.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-yelp.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-youtube.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-youtube.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-zerply.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-zerply.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-zurb.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-social-zurb.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-sound.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-sound.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-star.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-star.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-stop.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-stop.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-strikethrough.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-strikethrough.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-subscript.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-subscript.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-superscript.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-superscript.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-tablet-landscape.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-tablet-landscape.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-tablet-portrait.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-tablet-portrait.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-target-two.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-target-two.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-target.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-target.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-telephone-accessible.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-telephone-accessible.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-telephone.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-telephone.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-text-color.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-text-color.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-thumbnails.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-thumbnails.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-ticket.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-ticket.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso-business.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso-business.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso-female.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso-female.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torso.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-all-female.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-all-female.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-all.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-all.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-female-male.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-female-male.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-male-female.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos-male-female.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-torsos.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trash.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trash.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trees.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trees.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trophy.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-trophy.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-underline.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-underline.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-universal-access.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-universal-access.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-unlink.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-unlink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-unlock.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-unlock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-upload-cloud.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-upload-cloud.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-upload.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-upload.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-usb.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-usb.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-video.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-video.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume-none.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume-none.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume-strike.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume-strike.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-volume.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-web.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-web.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-wheelchair.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-wheelchair.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-widget.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-widget.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-wrench.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-wrench.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-x-circle.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-x-circle.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-x.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-x.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-yen.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-yen.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-zoom-in.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-zoom-in.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-zoom-out.svg" afterPath="$PROJECT_DIR$/assets/foundation-icons/svgs/fi-zoom-out.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/gal/photogal.css" afterPath="$PROJECT_DIR$/assets/gal/photogal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/install.sh" afterPath="$PROJECT_DIR$/deploy/install.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hm_auth/templates/registration/login.html" afterPath="$PROJECT_DIR$/hm_auth/templates/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hm_auth/templates/registration/logout.html" afterPath="$PROJECT_DIR$/hm_auth/templates/registration/logout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hm_auth/urls.py" afterPath="$PROJECT_DIR$/hm_auth/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/management/commands/clear.py" afterPath="$PROJECT_DIR$/photogal/management/commands/clear.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/management/commands/get_exif.py" afterPath="$PROJECT_DIR$/photogal/management/commands/get_exif.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/management/commands/list.py" afterPath="$PROJECT_DIR$/photogal/management/commands/list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/templates/info.html" afterPath="$PROJECT_DIR$/photogal/templates/info.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/urls.py" afterPath="$PROJECT_DIR$/photogal/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photogal/views.py" afterPath="$PROJECT_DIR$/photogal/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Заметки.txt" afterPath="$PROJECT_DIR$/Заметки.txt" />
     </list>
     <ignored path="HM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +334,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="SQLite -" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -63,7 +358,7 @@
       <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
               <folding />
             </state>
@@ -73,34 +368,9 @@
       <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9259257">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photogal_photocollections" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/photogal_photocollections">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -109,10 +379,8 @@
         <entry file="file://$PROJECT_DIR$/photogal/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="426" column="30" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
-              <folding>
-                <element signature="e#25#76#0" expanded="true" />
-              </folding>
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,12 +395,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogal/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5456081">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +410,33 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.068966">
+              <caret line="24" column="64" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hm_auth/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HM/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1827957">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -151,7 +446,7 @@
         <entry file="file://$PROJECT_DIR$/Заметки.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="68" />
+              <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -182,11 +477,9 @@
         <option value="$PROJECT_DIR$/hm_auth/templates/registration/logout.py" />
         <option value="$PROJECT_DIR$/hm_auth/templates/registration/logout.html" />
         <option value="$PROJECT_DIR$/hm_auth/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/hm_auth/urls.py" />
         <option value="$PROJECT_DIR$/photogal/management/commands/list.py" />
         <option value="$PROJECT_DIR$/photogal/admin.py" />
         <option value="$PROJECT_DIR$/photogal/settings.py" />
-        <option value="$PROJECT_DIR$/HM/urls.py" />
         <option value="$PROJECT_DIR$/photogal/management/commands/get_exif.py" />
         <option value="$PROJECT_DIR$/photogal/management/commands/clear.py" />
         <option value="$PROJECT_DIR$/photogal/templates/hello.html" />
@@ -203,15 +496,17 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/photogal/templates/info.html" />
         <option value="$PROJECT_DIR$/static/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Заметки.txt" />
         <option value="$PROJECT_DIR$/photogal/models.py" />
         <option value="$PROJECT_DIR$/templates/main.html" />
         <option value="$PROJECT_DIR$/HM/settings.py" />
         <option value="$PROJECT_DIR$/deploy/install.sh" />
         <option value="$PROJECT_DIR$/photogal/templates/album.html" />
+        <option value="$PROJECT_DIR$/Заметки.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/hm_auth/urls.py" />
         <option value="$PROJECT_DIR$/photogal/views.py" />
         <option value="$PROJECT_DIR$/photogal/urls.py" />
+        <option value="$PROJECT_DIR$/HM/urls.py" />
       </list>
     </option>
   </component>
@@ -251,7 +546,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,11 +616,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="photogal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="hm_auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,6 +650,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -368,7 +659,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db.sqlite3.old" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -388,7 +679,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="918" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -457,6 +748,23 @@
       <module name="HM" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HM" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -663,12 +971,6 @@
       <created>1442509893754</created>
       <option name="number" value="Default" />
       <updated>1442509893754</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Auto delete dublicates in collection list">
-      <created>1444157050351</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1444157050351</updated>
     </task>
     <task id="LOCAL-00016" summary="Optimize album template">
       <created>1444157593335</created>
@@ -958,7 +1260,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448816634477</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Create Collections download for guest.">
+      <created>1448819451020</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1448819451020</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView">
@@ -971,19 +1279,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2238806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.3509052" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25792813" sideWeight="0.45416668" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.47018105" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.64909476" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25893825" sideWeight="0.42917997" order="2" side_tool="false" content_ui="tabs" x="544" y="398" width="831" height="244" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19068256" sideWeight="0.64909476" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26435536" sideWeight="0.54583335" order="2" side_tool="false" content_ui="tabs" x="544" y="398" width="831" height="244" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.4259851" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36511377" sideWeight="0.4259851" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.49361023" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1319,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Migrations squashed" />
     <MESSAGE value="Fix deploy Script" />
     <MESSAGE value="Drop UserProfile model" />
     <MESSAGE value="Add static/README.md" />
@@ -1036,7 +1343,8 @@
     <MESSAGE value="Create Guest access in Collection." />
     <MESSAGE value="Create Link in guest access URL." />
     <MESSAGE value="Add restart uwsgi command to deploy runner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add restart uwsgi command to deploy runner" />
+    <MESSAGE value="Create Collections download for guest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Collections download for guest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1049,6 +1357,32 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/photogal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Заметки.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1090,7 +1424,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,13 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/48239efb-e781-4ca6-a733-1ba5059f2791/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/templates/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1222,13 +1551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HM/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hm_auth/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1247,13 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hm_auth/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1279,13 +1594,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hm_auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/116dc914-5186-424f-8b06-fd254a7a15fa/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1341,35 +1649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Заметки.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/c3b8cc74/48239efb-e781-4ca6-a733-1ba5059f2791/photogal_photocollections">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1396,7 +1675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy/install.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9259257">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
@@ -1404,26 +1683,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photogal/templates/album.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Заметки.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.068966">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photogal/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="426" column="30" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
-          <folding>
-            <element signature="e#25#76#0" expanded="true" />
-          </folding>
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photogal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5456081">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hm_auth/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HM/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1827957">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>

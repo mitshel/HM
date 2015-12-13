@@ -1,6 +1,7 @@
 from django.conf.urls import include, url
+from django.contrib.auth.views import login,logout
 
 urlpatterns = [
-    url(r'^login/$','django.contrib.auth.views.login',{"template_name":"registration/login.html"}),
-    url(r'^logout/$','django.contrib.auth.views.logout',{"template_name":"registration/logout.html"}),
+    url(r'^login/$',login,{"template_name":"registration/login.html"}),
+    url(r'^logout/$',logout,{"template_name":"registration/logout.html"}),
 ]
