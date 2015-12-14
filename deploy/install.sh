@@ -11,3 +11,4 @@ sudo -u www python3 $MANAGE_PY collectstatic --noinput
 sudo -u www python3 $MANAGE_PY migrate
 sudo /usr/bin/systemctl restart uwsgi
 
+
