@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from django.template import Context, RequestContext
-from django.shortcuts import render_to_response, redirect, Http404
+from django.template import Context
+from django.shortcuts import render, redirect, Http404
 from django.template.context_processors import csrf
 from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, PhotoCollections, addthumb, PHOTOGAL_THUMBS_ROOT
 from django.conf import settings
@@ -55,12 +55,12 @@ def photogal_processor(request):
 
 # Create your views here.
 def hello(request):
-    args = RequestContext(request)
-    return render_to_response('hello.html', args)
+    args = {}
+    return render(request, 'hello.html', args)
 
 
 def show_album(request, album_id=None, cat_id=None):
-    args = RequestContext(request)
+    args = {}
     user=request.user
     if not user.is_authenticated():
         return Http404
@@ -111,10 +111,10 @@ def show_album(request, album_id=None, cat_id=None):
     args['folder'] = folder
     args['breadcumbs'] = breadcumbs
 
-    return render_to_response('album.html', args)
+    return render(request, 'album.html', args)
 
 def show_collection(request, collection_id=None):
-    args = RequestContext(request)
+    args = {}
     user = request.user
     if not user.is_authenticated():
         return Http404
@@ -148,7 +148,7 @@ def show_collection(request, collection_id=None):
     args['collection'] = collection
     args['breadcumbs'] = breadcumbs
 
-    return render_to_response('album.html', args)
+    return render(request, 'album.html', args)
 
 def updateselect(request, id=None, value=0):
     user=request.user
@@ -372,7 +372,7 @@ def info_photo(request, photo_id=None):
     return render_to_response('info.html', args)
 
 def guest_collection(request, guest_hash=None):
-    args = RequestContext(request)
+    args = {}
     collection = None
     if guest_hash!=None:
         try:
@@ -400,7 +400,7 @@ def guest_collection(request, guest_hash=None):
     args['guest_access'] = True
     args['guest_hash'] = guest_hash
 
-    return render_to_response('album.html', args)
+    return render(request, 'album.html', args)
 
 def guest_download_collection(request, guest_hash=None):
     collection = None

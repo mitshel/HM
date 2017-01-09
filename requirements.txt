@@ -1,3 +1,4 @@
-Django==1.8 ; python_version == '3.3'
-Django>=1.8 ; python_version >= '3.4'
+#Django==1.8 ; python_version == '3.3'
+#Django>=1.8 ; python_version >= '3.4'
+Django==1.9
 Pillow>=2.9.0
