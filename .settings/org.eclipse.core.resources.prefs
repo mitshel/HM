@@ -1,3 +1,6 @@
 eclipse.preferences.version=1
 encoding//HM/settings.py=utf-8
+encoding//photogal/management/commands/get_exif.py=utf-8
+encoding//photogal/management/commands/scan.py=utf-8
+encoding//photogal/models.py=utf-8
 encoding//photogal/views.py=utf-8
