@@ -366,10 +366,10 @@ def info_photo(request, photo_id=None):
         photo = PhotoImages.objects.get(id=photo_id)
     except PhotoImages.DoesNotExist:
         return Http404
-    args = RequestContext(request)
+    args = {}
     args['photo']=photo
     args['image_path']=os.path.join(settings.PHOTOGAL_THUMBS_DIR,photo.album.tag,photo.path,addthumb(photo.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
-    return render_to_response('info.html', args)
+    return render(request, 'info.html', args)
 
 def guest_collection(request, guest_hash=None):
     args = {}
