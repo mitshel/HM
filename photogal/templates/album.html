@@ -126,6 +126,7 @@
                     <a href="#" title="Изменить" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
                     <a href="#" title="Информация" onclick="info_photo({{ p.id }});"><i class="fi-info icon-style"></i></a>
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
+                    <a href="#" title="Загрузить в Instagram"><i class="fi-social-instagram icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
