@@ -1,0 +1,9 @@
+  <h4 id="InstaModalTitle">Загрузка в Instagram.</h4>
+  <div class="th round text-center" style="margin: 5px"><img src="{{ MEDIA_URL }}{{ image_path }}" style="max-height: 300px; max-width: 300px" ></div>
+  <form method="post" action="/photo/insta_upload/{{photo.id}}/" name="insta_upload_form" id="insta_upload_form">
+  {% csrf_token %}
+      <label>Комментарий к фото:<input type="text" name="title" value="" id="insta_upload_title"/></label>
+      <input type="hidden" name="req_path" value="{{ request.path }}">
+    <div class="text-center"><input class="button" type="submit" id="insta_upload_submit" value="Ок">&nbsp;&nbsp;&nbsp;<a class="button close" onClick="$('#InstaModal').foundation('reveal', 'close');">Отмена</a></div>
+  </form>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>

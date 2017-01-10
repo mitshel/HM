@@ -90,7 +90,11 @@
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
+
 <div id="InfoPhotoModal" class="reveal-modal small text-center" data-reveal aria-labelledby="InfoPhotoModalTitle" aria-hidden="true" role="dialog">
+</div>
+
+<div id="InstaModal" class="reveal-modal small text-center" data-reveal aria-labelledby="InstaModalTitle" aria-hidden="true" role="dialog">
 </div>
 {% endblock %}
 
@@ -126,7 +130,7 @@
                     <a href="#" title="Изменить" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
                     <a href="#" title="Информация" onclick="info_photo({{ p.id }});"><i class="fi-info icon-style"></i></a>
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
-                    <a href="#" title="Загрузить в Instagram"><i class="fi-social-instagram icon-style"></i></a>
+                    <a href="#" title="Загрузить в Instagram" onclick="insta_photo({{ p.id }});"><i class="fi-social-instagram icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
@@ -245,7 +249,10 @@
        function info_photo(p_id) {
            $('#InfoPhotoModal').foundation('reveal', 'open','/photo/info/'+p_id+'/');
        }
-
+       
+       function insta_photo(p_id) {
+           $('#InstaModal').foundation('reveal', 'open','/photo/insta/'+p_id+'/');
+       }
 
     </script>
 {% endblock %}

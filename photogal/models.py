@@ -11,6 +11,12 @@ from HM.settings import MEDIA_ROOT, PHOTOGAL_THUMBS_DIR, PHOTOGAL_THUMBS_SIZE, P
 PHOTOGAL_THUMBS_ROOT = os.path.join(MEDIA_ROOT, PHOTOGAL_THUMBS_DIR)
 LIST_DIVIDER = ','
 
+#Additional User Profile Settings
+class UserProfile(models.Model):
+    uid = models.ForeignKey(User)
+    instagram_user = models.CharField(max_length=32)
+    instagram_pass = models.CharField(max_length=32)
+
 # Create your models here.
 class Setting(models.Model):
     name = models.CharField(max_length=16, null=False, blank=False)

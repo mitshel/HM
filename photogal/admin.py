@@ -1,8 +1,11 @@
 from django.contrib import admin
-from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats
+from photogal.models import Setting, PhotoAlbums, PhotoImages, PhotoCats, UserProfile
 
 # Register your models here.
 
+class UserProfile_admin(admin.ModelAdmin):
+    list_display = ('uid', 'instagram_user', 'instagram_pass')
+    
 class Setting_admin(admin.ModelAdmin):
     list_display = ('name', 'value', 'description')
 
@@ -16,6 +19,7 @@ class PhotoImagesAdmin(admin.ModelAdmin):
 class PhotoCatsAdmin(admin.ModelAdmin):
     list_display = ('album', 'name', 'path', 'parent')
 
+admin.site.register(UserProfile, UserProfile_admin)
 admin.site.register(Setting, Setting_admin)
 admin.site.register(PhotoAlbums, PhotoAlbumsAdmin)
 admin.site.register(PhotoImages, PhotoImagesAdmin)
