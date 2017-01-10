@@ -266,8 +266,8 @@
        }
        
        function insta_photo(p_id, prev_path) {
-           $('#InstaModal_image').attr("href",'/photo/insta_upload/'+p_id+'/');
-           $('#InstaModal_form').attr("action","{{ MEDIA_URL }}"+prev_path);
+           $('#InstaModal_image').attr("src","{{ MEDIA_URL }}"+prev_path);
+           $('#InstaModal_form').attr("action",'/photo/insta_upload/'+p_id+'/');
            $('#InstaModal').foundation('reveal', 'open');
        }
 
