@@ -227,7 +227,7 @@ def copy_collection(request, source_id=None):
     except PhotoCollections.DoesNotExist:
         return Http404
 
-    args = RequestContext(request)
+    args = {}
     args.update(csrf(request))
     if request.POST:
         new_or_choice = request.POST.get('new_or_choice', '')
@@ -255,7 +255,7 @@ def copy_photo(request, photo_id=None):
 
     if isinstance(photo_id,int): photo_id=str(photo_id)
 
-    args = RequestContext(request)
+    args = {}
     args.update(csrf(request))
     if request.POST:
         new_or_choice = request.POST.get('new_or_choice', '')
@@ -286,7 +286,7 @@ def settings_collection(request, collection_id=None):
     except PhotoCollections.DoesNotExist:
         return Http404
 
-    args = RequestContext(request)
+    args = {}
     args.update(csrf(request))
     if request.POST:
         title = request.POST.get('title', '')
@@ -346,7 +346,7 @@ def settings_photo(request, photo_id=None):
     except PhotoImages.DoesNotExist:
         return Http404
 
-    args = RequestContext(request)
+    args = {}
     args.update(csrf(request))
     if request.POST:
         title = request.POST.get('title', '')
