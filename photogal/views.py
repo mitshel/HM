@@ -298,7 +298,7 @@ def settings_collection(request, collection_id=None):
             collection.access_hash = None
 
         collection.title=title
-        collection.guest_access = gaccess
+        collection.guest_access = not (gaccess==False)
         collection.save()
         return redirect('/photo/collect/%s/'%collection_id)
 
