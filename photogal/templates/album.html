@@ -260,11 +260,7 @@
        function info_photo(p_id) {
            $('#InfoPhotoModal').foundation('reveal', 'open','/photo/info/'+p_id+'/');
        }
-       
-       function insta1_photo(p_id) {
-           $('#InstaModal').foundation('reveal', 'open','/photo/insta/'+p_id+'/');
-       }
-       
+              
        function insta_photo(p_id, prev_path) {
            $('#InstaModal_image').attr("src","{{ MEDIA_URL }}"+prev_path);
            $('#InstaModal_form').attr("action",'/photo/insta_upload/'+p_id+'/');

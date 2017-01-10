@@ -8,7 +8,6 @@ urlpatterns = [
                url(r'^copy/(\d+)/$', views.copy_photo),
                url(r'^settings/(\d+)/$', views.settings_photo),
                url(r'^info/(\d+)/$', views.info_photo),
-               url(r'^insta/(\d+)/$', views.insta_photo),
                url(r'^insta_upload/(\d+)/$', views.insta_upload),
                url(r'^collect/(\d+)/$', views.show_collection),
                url(r'^collect/dl/(\d+)/$', views.download_collection),

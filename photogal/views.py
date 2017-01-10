@@ -373,22 +373,6 @@ def info_photo(request, photo_id=None):
     args['image_path']=os.path.join(settings.PHOTOGAL_THUMBS_DIR,photo.album.tag,photo.path,addthumb(photo.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
     return render(request, 'info.html', args)
 
-def insta_photo(request, photo_id=None):
-    user=request.user
-    if not user.is_authenticated():
-        return Http404
-    if photo_id==None:
-        return Http404
-
-    try:
-        photo = PhotoImages.objects.get(id=photo_id)
-    except PhotoImages.DoesNotExist:
-        return Http404
-    args = {}
-    args['photo']=photo
-    args['image_path']=os.path.join(settings.PHOTOGAL_THUMBS_DIR,photo.album.tag,photo.path,addthumb(photo.filename, settings.PHOTOGAL_PREV_STR)).replace('\\','/')
-    return render(request, 'insta.html', args)
-
 def insta_upload(request, photo_id=None):
     user=request.user
     if not user.is_authenticated():
