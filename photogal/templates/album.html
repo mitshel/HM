@@ -134,14 +134,14 @@
                     {% if not collection.favorite %}
                        <input type="checkbox" class="favstar" id="{{ p.id }}" onclick="update_select(this);" {% if p.checked %}checked{% endif %}/><label for="{{ p.id }}"><i class="fi-star icon-style"></i></label>
                     {% endif %}
-                    <a href="#" onclick="photo2collection({{ p.id }});" title="Добавить в коллекцию"><i class="fi-plus icon-style"></i></a>
+                    <a href="#" data-reveal-id="#AddCollectModal" onclick="photo2collection({{ p.id }});" title="Добавить в коллекцию"><i class="fi-plus icon-style"></i></a>
                     {% if collection %}
-                       <a href="#" onclick="del_photo({{ collection.id }},{{ p.id }},'{{ p.prev_path }}');" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
+                       <a href="#" data-reveal-id="#DeletePhotoModal" onclick="del_photo({{ collection.id }},{{ p.id }},'{{ p.prev_path }}');" title="Удалить из коллекции"><i class="fi-minus icon-style"></i></a>
                     {% endif %}
-                    <a href="#" title="Изменить" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
+                    <a href="#" title="Изменить" data-reveal-id="#SettingsPhotoModal" onclick="stts_photo({{ p.id }},'{{ p.title }}');"><i class="fi-page-edit icon-style"></i></a>
                     <a href="#" title="Информация" onclick="info_photo({{ p.id }});"><i class="fi-info icon-style"></i></a>
                     <a href="{{ MEDIA_URL }}{{p.prev_path}}" download title="Скачать фото"><i class="fi-download icon-style"></i></a>
-                    <a href="#" title="Загрузить в Instagram" onclick="insta_photo({{ p.id }},'{{ p.prev_path }}');"><i class="fi-social-instagram icon-style"></i></a>
+                    <a href="#" title="Загрузить в Instagram" data-reveal-id="#InstaModal" onclick="insta_photo({{ p.id }},'{{ p.prev_path }}');"><i class="fi-social-instagram icon-style"></i></a>
                 </div>
                 <p style="font-size: 10px; margin:0; line-height: 1">{{ p.title }}</p>
         {% endfor %}
@@ -236,6 +236,7 @@
            $('#AddCollectModalTitle').text("Копирование фотографии в коллекцию.")
            $('#addcollect_type').attr("value","photo")
            $('#AddCollectModal').foundation('reveal', 'open');
+           return false;
        }
 
        function collection2collection(id) {
@@ -262,10 +263,11 @@
        }
               
        function insta_photo(p_id, prev_path) {
+    	   //location.hash='';
            $('#InstaModal_image').attr("src","{{ MEDIA_URL }}"+prev_path);
            $('#InstaModal_form').attr("action",'/photo/insta_upload/'+p_id+'/');
            $('#InstaModal').foundation('reveal', 'open');
        }
-
+    	
     </script>
 {% endblock %}
