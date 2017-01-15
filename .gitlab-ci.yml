@@ -5,9 +5,16 @@ stages:
   - build
   - test
   - deploy
+  
+test:
+  stage: test
+  script: python3 manage.py test
 
-build:
+deploy_staging:
   stage: deploy
   script: ./deploy/install.sh
+  environment:
+     name: staging
+     url: http://photo.dsnet.ru 
   only:
     - master
